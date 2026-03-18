@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VyklizeniExpert ‚Äď rychl√© a spolehliv√© vykl√≠zen√≠ bytŇĮ, domŇĮ, sklepŇĮ, pozŇĮstalost√≠ i kancel√°Ňô√≠. Pevn√° cena pŇôedem, n√°stup do 24h, ekologick√° likvidace. Kladno, Praha a okol√≠." />
   <title>VyklizeniExpert ‚Äď Rychl√© vykl√≠zen√≠ nemovitost√≠ za rozumnou cenu</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --green:       #1A5C2A;
       --green-mid:   #206B32;
@@ -26,7 +26,6 @@
       --gray-600:    #4A6B4A;
       --gray-800:    #1A2E1A;
     }
-
     html { scroll-behavior: smooth; }
     body {
       font-family: 'Inter', sans-serif;
@@ -35,7 +34,6 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
     }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        NAVBAR
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
@@ -52,7 +50,6 @@
       padding: 0 2.5rem;
       justify-content: space-between;
     }
-
     .logo {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none;
@@ -70,44 +67,24 @@
       color: var(--green);
       letter-spacing: -0.5px;
     }
-    .logo-text em {
-      font-style: normal;
-      color: var(--gold);
-    }
-
-    .nav-links {
-      display: flex; gap: 2rem; list-style: none;
-    }
+    .logo-text em { font-style: normal; color: var(--gold); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a {
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: var(--gray-600);
-      text-decoration: none;
+      font-size: 0.875rem; font-weight: 500;
+      color: var(--gray-600); text-decoration: none;
       transition: color .2s;
     }
     .nav-links a:hover { color: var(--green); }
-
+    .nav-links a.active { color: var(--green); font-weight: 700; }
     .nav-actions { display: flex; gap: 0.75rem; align-items: center; }
-
-    .nav-tel {
-      font-size: 0.875rem;
-      font-weight: 700;
-      color: var(--green);
-      text-decoration: none;
-    }
-
+    .nav-tel { font-size: 0.875rem; font-weight: 700; color: var(--green); text-decoration: none; }
     .btn-nav {
-      background: var(--green);
-      color: white;
-      padding: 9px 18px;
-      border-radius: 8px;
-      font-size: 0.85rem;
-      font-weight: 700;
-      text-decoration: none;
+      background: var(--green); color: white;
+      padding: 9px 18px; border-radius: 8px;
+      font-size: 0.85rem; font-weight: 700; text-decoration: none;
       transition: all .2s;
     }
     .btn-nav:hover { background: var(--green-light); transform: translateY(-1px); }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        GOLD ANNOUNCEMENT BAR
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
@@ -116,17 +93,11 @@
       background: var(--gold);
       padding: 10px 2rem;
       text-align: center;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: white;
+      font-size: 0.9rem; font-weight: 700; color: white;
       letter-spacing: 0.2px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.75rem;
+      display: flex; align-items: center; justify-content: center; gap: 0.75rem;
     }
     .announce-bar span { opacity: 0.85; font-weight: 400; }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        HERO
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
@@ -139,1073 +110,644 @@
       align-items: stretch;
       overflow: hidden;
     }
-
     .hero-left {
       padding: 5rem 4rem 5rem 2.5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+      display: flex; flex-direction: column; justify-content: center;
       background: var(--white);
       position: relative;
     }
-
     .hero-left::after {
       content: '';
       position: absolute;
       top: 0; bottom: 0; right: 0;
-      width: 1px;
-      background: var(--gray-200);
+      width: 1px; background: var(--gray-200);
     }
-
     .hero-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
+      display: inline-flex; align-items: center; gap: 8px;
       background: var(--green-pale);
       border: 1.5px solid var(--green-pale2);
       color: var(--green);
-      padding: 5px 14px;
-      border-radius: 100px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-bottom: 1.25rem;
-      width: fit-content;
+      padding: 5px 14px; border-radius: 100px;
+      font-size: 0.75rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.8px;
+      margin-bottom: 1.25rem; width: fit-content;
     }
-
     .hero h1 {
       font-size: clamp(2.8rem, 5vw, 4.2rem);
-      font-weight: 900;
-      color: var(--green);
-      line-height: 1.05;
-      letter-spacing: -2px;
+      font-weight: 900; color: var(--green);
+      line-height: 1.05; letter-spacing: -2px;
       margin-bottom: 1.25rem;
     }
-
     .hero h1 .gold { color: var(--gold); }
-
     .hero-desc {
-      font-size: 1.05rem;
-      color: var(--gray-600);
-      line-height: 1.75;
-      max-width: 500px;
-      margin-bottom: 2rem;
+      font-size: 1.05rem; color: var(--gray-600);
+      line-height: 1.75; max-width: 500px; margin-bottom: 2rem;
     }
-
     .hero-pills {
-      display: flex;
-      gap: 0.6rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
+      display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2rem;
     }
     .hero-pill {
-      display: flex;
-      align-items: center;
-      gap: 6px;
+      display: flex; align-items: center; gap: 6px;
       padding: 6px 14px;
-      background: var(--gray-50);
-      border: 1.5px solid var(--gray-200);
-      border-radius: 100px;
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--gray-800);
+      background: var(--gray-50); border: 1.5px solid var(--gray-200);
+      border-radius: 100px; font-size: 0.78rem; font-weight: 600; color: var(--gray-800);
     }
-
-    .hero-cta-group {
-      display: flex; gap: 0.75rem; flex-wrap: wrap;
-    }
-
+    .hero-cta-group { display: flex; gap: 0.75rem; flex-wrap: wrap; }
     .btn-primary {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: var(--green);
-      color: white;
-      padding: 14px 28px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green); color: white;
+      padding: 14px 28px; border-radius: 10px;
+      font-size: 0.95rem; font-weight: 700; text-decoration: none;
       transition: all .2s;
       box-shadow: 0 6px 24px rgba(26,92,42,0.25);
     }
     .btn-primary:hover { background: var(--green-light); transform: translateY(-2px); box-shadow: 0 10px 32px rgba(26,92,42,0.35); }
-
     .btn-outline {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: transparent;
-      border: 2px solid var(--green);
-      color: var(--green);
-      padding: 14px 28px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 2px solid var(--green); color: var(--green);
+      padding: 14px 28px; border-radius: 10px;
+      font-size: 0.95rem; font-weight: 700; text-decoration: none;
       transition: all .2s;
     }
     .btn-outline:hover { background: var(--green-pale); }
-
-    /* HERO RIGHT ‚ÄĒ Kalkulace form */
+    /* HERO RIGHT */
     .hero-right {
       background: var(--green);
-      display: flex;
-      flex-direction: column;
+      display: flex; flex-direction: column;
       padding: 3rem 2.5rem;
-      position: relative;
-      overflow: hidden;
+      position: relative; overflow: hidden;
     }
-
     .hero-right::before {
-      content: '';
-      position: absolute;
-      bottom: -80px; right: -80px;
-      width: 250px; height: 250px;
-      background: rgba(255,255,255,0.04);
-      border-radius: 50%;
+      content: ''; position: absolute;
+      bottom: -80px; right: -80px; width: 250px; height: 250px;
+      background: rgba(255,255,255,0.04); border-radius: 50%;
     }
-
     .hero-right::after {
-      content: '';
-      position: absolute;
-      top: -50px; left: -50px;
-      width: 180px; height: 180px;
-      background: rgba(201,162,39,0.12);
-      border-radius: 50%;
+      content: ''; position: absolute;
+      top: -50px; left: -50px; width: 180px; height: 180px;
+      background: rgba(201,162,39,0.12); border-radius: 50%;
     }
-
     .form-card {
-      background: white;
-      border-radius: 20px;
-      padding: 2rem;
-      position: relative;
-      z-index: 2;
+      background: white; border-radius: 20px; padding: 2rem;
+      position: relative; z-index: 2;
       box-shadow: 0 20px 60px rgba(0,0,0,0.25);
     }
-
     .form-badge {
-      display: inline-flex;
-      align-items: center; gap: 6px;
-      background: var(--gold);
-      color: white;
-      padding: 4px 12px;
-      border-radius: 100px;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      margin-bottom: 1rem;
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--gold); color: white;
+      padding: 4px 12px; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 1rem;
     }
-
     .form-card h3 {
-      font-size: 1.3rem;
-      font-weight: 900;
-      color: var(--green);
-      margin-bottom: 0.25rem;
-      letter-spacing: -0.5px;
+      font-size: 1.3rem; font-weight: 900; color: var(--green);
+      margin-bottom: 0.25rem; letter-spacing: -0.5px;
     }
-
-    .form-card p {
-      font-size: 0.8rem;
-      color: var(--gray-400);
-      margin-bottom: 1.25rem;
+    .form-card > form > p, .form-card > p {
+      font-size: 0.8rem; color: var(--gray-400); margin-bottom: 1.25rem;
     }
-
-    .fg {
-      display: flex;
-      flex-direction: column;
-      gap: 5px;
-      margin-bottom: 0.9rem;
-    }
-
+    .fg { display: flex; flex-direction: column; gap: 5px; margin-bottom: 0.9rem; }
     .fg label {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      color: var(--green);
+      font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.4px; color: var(--green);
     }
-
     .fg input, .fg select, .fg textarea {
       padding: 10px 14px;
-      border: 1.5px solid var(--gray-200);
-      border-radius: 8px;
-      font-size: 0.875rem;
-      font-family: 'Inter', sans-serif;
-      color: var(--gray-800);
-      background: var(--gray-50);
-      outline: none;
-      transition: border-color .2s, background .2s;
+      border: 1.5px solid var(--gray-200); border-radius: 8px;
+      font-size: 0.875rem; font-family: 'Inter', sans-serif;
+      color: var(--gray-800); background: var(--gray-50);
+      outline: none; transition: border-color .2s, background .2s;
     }
     .fg input:focus, .fg select:focus, .fg textarea:focus {
-      border-color: var(--green);
-      background: white;
+      border-color: var(--green); background: white;
     }
-
     /* FILE UPLOAD */
     .fg-upload label {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
       padding: 16px 14px;
-      border: 2px dashed var(--gray-200);
-      border-radius: 8px;
-      background: var(--gray-50);
-      cursor: pointer;
+      border: 2px dashed var(--gray-200); border-radius: 8px;
+      background: var(--gray-50); cursor: pointer;
       transition: border-color .2s, background .2s;
-      text-align: center;
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.4px;
-      color: var(--green);
+      text-align: center; font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.4px; color: var(--green);
     }
-    .fg-upload label:hover {
-      border-color: var(--green);
-      background: var(--green-pale);
-    }
+    .fg-upload label:hover { border-color: var(--green); background: var(--green-pale); }
     .fg-upload .upload-icon { font-size: 1.4rem; }
     .fg-upload .upload-hint {
-      font-size: 0.72rem;
-      font-weight: 400;
-      text-transform: none;
-      letter-spacing: 0;
-      color: var(--gray-400);
-      margin-top: 2px;
+      font-size: 0.72rem; font-weight: 400; text-transform: none;
+      letter-spacing: 0; color: var(--gray-400); margin-top: 2px;
     }
     .fg-upload input[type="file"] { display: none; }
     .fg-upload .file-list {
-      font-size: 0.75rem;
-      color: var(--green);
-      margin-top: 6px;
-      padding: 6px 10px;
-      background: var(--green-pale);
-      border-radius: 6px;
-      display: none;
+      font-size: 0.75rem; color: var(--green); margin-top: 6px;
+      padding: 6px 10px; background: var(--green-pale); border-radius: 6px; display: none;
     }
     .fg-row { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
-
+    /* GDPR */
+    .gdpr-row { display: flex; align-items: flex-start; gap: 8px; margin-bottom: 0.75rem; }
+    .gdpr-row input[type=checkbox] {
+      width: 15px; height: 15px; margin-top: 3px; flex-shrink: 0;
+      accent-color: var(--green); cursor: pointer;
+    }
+    .gdpr-row label {
+      font-size: 0.7rem; color: var(--gray-600); line-height: 1.5;
+      font-weight: 400; text-transform: none; letter-spacing: 0; cursor: pointer;
+    }
+    .gdpr-row a { color: var(--green); }
     .form-submit-btn {
-      width: 100%;
-      padding: 13px;
-      background: var(--green);
-      color: white;
-      border: none;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      font-weight: 700;
-      cursor: pointer;
-      transition: all .2s;
-      margin-top: 0.25rem;
-      letter-spacing: 0.2px;
-      font-family: 'Inter', sans-serif;
+      width: 100%; padding: 13px;
+      background: var(--green); color: white; border: none;
+      border-radius: 10px; font-size: 0.95rem; font-weight: 700;
+      cursor: pointer; transition: all .2s; margin-top: 0.25rem;
+      letter-spacing: 0.2px; font-family: 'Inter', sans-serif;
     }
     .form-submit-btn:hover { background: var(--green-light); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(26,92,42,0.3); }
-
-    .form-trust {
-      font-size: 0.7rem;
-      color: var(--gray-400);
-      text-align: center;
-      margin-top: 0.6rem;
-    }
-
+    .form-submit-btn:disabled { background: var(--gray-400); cursor: not-allowed; transform: none; }
+    .form-trust { font-size: 0.7rem; color: var(--gray-400); text-align: center; margin-top: 0.6rem; }
     .hero-stats {
-      display: flex;
-      gap: 0;
-      margin-top: 1.5rem;
-      position: relative;
-      z-index: 2;
+      display: flex; gap: 0; margin-top: 1.5rem;
+      position: relative; z-index: 2;
     }
-
     .h-stat {
-      flex: 1;
-      text-align: center;
-      padding: 0.75rem 0.5rem;
+      flex: 1; text-align: center; padding: 0.75rem 0.5rem;
       border-right: 1px solid rgba(255,255,255,0.12);
     }
     .h-stat:last-child { border-right: none; }
-
     .h-stat-num {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: white;
-      line-height: 1;
-      letter-spacing: -0.5px;
+      font-size: 1.5rem; font-weight: 900; color: white;
+      line-height: 1; letter-spacing: -0.5px;
     }
     .h-stat-num em { color: var(--gold-border); font-style: normal; }
     .h-stat-label {
-      font-size: 0.65rem;
-      color: rgba(255,255,255,0.5);
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-      margin-top: 2px;
+      font-size: 0.65rem; color: rgba(255,255,255,0.5);
+      text-transform: uppercase; letter-spacing: 0.3px; margin-top: 2px;
     }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        TRUST BAR
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .trust-bar {
-      background: var(--green);
-      padding: 0;
-      display: flex;
-      overflow: hidden;
+      background: var(--green); padding: 0;
+      display: flex; overflow: hidden;
     }
-
     .trust-item {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
+      flex: 1; display: flex; align-items: center; justify-content: center; gap: 8px;
       padding: 1rem 0.75rem;
       border-right: 1px solid rgba(255,255,255,0.1);
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: rgba(255,255,255,0.9);
+      font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.9);
     }
     .trust-item:last-child { border-right: none; }
     .trust-icon { font-size: 1rem; }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        SECTION COMMON
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     section { padding: 5rem 2.5rem; }
     .container { max-width: 1160px; margin: 0 auto; }
-
     .sec-label {
-      display: inline-block;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: var(--gold);
-      background: var(--gold-light);
-      border: 1px solid #E8D8A0;
-      padding: 3px 10px;
-      border-radius: 100px;
-      margin-bottom: 0.75rem;
+      display: inline-block; font-size: 0.7rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 1.5px; color: var(--gold);
+      background: var(--gold-light); border: 1px solid #E8D8A0;
+      padding: 3px 10px; border-radius: 100px; margin-bottom: 0.75rem;
     }
-
     .sec-title {
-      font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 900;
-      color: var(--green);
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 0.75rem;
+      font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 900;
+      color: var(--green); letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 0.75rem;
     }
-
-    .sec-sub {
-      font-size: 1rem;
-      color: var(--gray-600);
-      line-height: 1.7;
-      max-width: 560px;
-    }
-
+    .sec-sub { font-size: 1rem; color: var(--gray-600); line-height: 1.7; max-width: 560px; }
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        SERVICES
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .services { background: var(--gray-50); }
-
     .services-header { text-align: center; margin-bottom: 3.5rem; }
     .services-header .sec-sub { margin: 0 auto; }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
     .svc-card {
-      background: white;
-      border-radius: 18px;
-      padding: 1.75rem;
-      border: 1.5px solid var(--gray-200);
-      transition: all .25s;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
+      background: white; border-radius: 18px; padding: 1.75rem;
+      border: 1.5px solid var(--gray-200); transition: all .25s;
+      cursor: pointer; position: relative; overflow: hidden;
     }
-
     .svc-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0;
       height: 3px;
       background: linear-gradient(90deg, var(--green), var(--gold));
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform .3s;
+      transform: scaleX(0); transform-origin: left; transition: transform .3s;
     }
-
-    .svc-card:hover {
-      border-color: var(--green-pale2);
-      transform: translateY(-4px);
-      box-shadow: 0 16px 48px rgba(26,92,42,0.1);
-    }
+    .svc-card:hover { border-color: var(--green-pale2); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(26,92,42,0.1); }
     .svc-card:hover::after { transform: scaleX(1); }
-
-    .svc-icon {
-      width: 52px; height: 52px;
-      background: var(--green-pale);
-      border-radius: 12px;
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1.5rem;
-      margin-bottom: 1.1rem;
-    }
-
-    .svc-card h3 {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: var(--green);
-      margin-bottom: 0.5rem;
-      letter-spacing: -0.3px;
-    }
-
-    .svc-card p {
-      font-size: 0.85rem;
-      color: var(--gray-600);
-      line-height: 1.65;
-      margin-bottom: 1rem;
-    }
-
-    .svc-days {
-      font-size: 0.72rem;
-      font-weight: 700;
-      color: var(--gray-400);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
+    .svc-icon { width: 52px; height: 52px; background: var(--green-pale); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; margin-bottom: 1.1rem; }
+    .svc-card h3 { font-size: 1.05rem; font-weight: 800; color: var(--green); margin-bottom: 0.5rem; letter-spacing: -0.3px; }
+    .svc-card p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.65; margin-bottom: 1rem; }
+    .svc-days { font-size: 0.72rem; font-weight: 700; color: var(--gray-400); text-transform: uppercase; letter-spacing: 0.5px; }
     .svc-link {
-      display: inline-flex;
-      align-items: center; gap: 4px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--green);
-      text-decoration: none;
-      margin-top: 0.75rem;
-      transition: gap .2s;
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 0.8rem; font-weight: 700; color: var(--green);
+      text-decoration: none; margin-top: 0.75rem; transition: gap .2s;
     }
     .svc-link:hover { gap: 8px; }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        HOW IT WORKS
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .how { background: white; }
-
-    .how-layout {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
-    }
-
+    .how-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
     .steps { display: flex; flex-direction: column; gap: 0; }
-
     .step-item {
-      display: flex;
-      gap: 1.25rem;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--gray-100);
-      position: relative;
+      display: flex; gap: 1.25rem; padding: 1.5rem 0;
+      border-bottom: 1px solid var(--gray-100); position: relative;
     }
     .step-item:last-child { border-bottom: none; }
-
     .step-num {
-      flex-shrink: 0;
-      width: 44px; height: 44px;
-      border-radius: 50%;
-      background: var(--green-pale);
-      border: 2px solid var(--green-pale2);
-      color: var(--green);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-      font-weight: 900;
-      position: relative;
-      z-index: 1;
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%;
+      background: var(--green-pale); border: 2px solid var(--green-pale2);
+      color: var(--green); display: flex; align-items: center; justify-content: center;
+      font-size: 1rem; font-weight: 900; position: relative; z-index: 1;
     }
-
     .step-item.active .step-num {
-      background: var(--green);
-      border-color: var(--green);
-      color: white;
+      background: var(--green); border-color: var(--green); color: white;
       box-shadow: 0 4px 16px rgba(26,92,42,0.3);
     }
-
-    .step-body h4 {
-      font-size: 0.975rem;
-      font-weight: 800;
-      color: var(--green);
-      margin-bottom: 4px;
-      letter-spacing: -0.2px;
-    }
-    .step-body p {
-      font-size: 0.85rem;
-      color: var(--gray-600);
-      line-height: 1.6;
-    }
-
+    .step-body h4 { font-size: 0.975rem; font-weight: 800; color: var(--green); margin-bottom: 4px; letter-spacing: -0.2px; }
+    .step-body p { font-size: 0.85rem; color: var(--gray-600); line-height: 1.6; }
     .how-visual {
       background: linear-gradient(145deg, var(--green) 0%, var(--green-light) 100%);
-      border-radius: 28px;
-      padding: 3.5rem 2.5rem;
-      position: relative;
-      overflow: hidden;
-      text-align: center;
+      border-radius: 28px; padding: 3.5rem 2.5rem;
+      position: relative; overflow: hidden; text-align: center;
     }
-
     .how-visual::before {
-      content: '';
-      position: absolute;
-      top: -60px; right: -60px;
-      width: 220px; height: 220px;
-      background: rgba(201,162,39,0.12);
-      border-radius: 50%;
+      content: ''; position: absolute; top: -60px; right: -60px;
+      width: 220px; height: 220px; background: rgba(201,162,39,0.12); border-radius: 50%;
     }
-
     .how-visual-emoji { font-size: 4.5rem; margin-bottom: 1rem; }
-
-    .how-visual h3 {
-      font-size: 1.5rem;
-      font-weight: 900;
-      color: white;
-      letter-spacing: -0.5px;
-      line-height: 1.2;
-      margin-bottom: 0.5rem;
-    }
-
-    .how-visual p {
-      font-size: 0.875rem;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 2rem;
-    }
-
+    .how-visual h3 { font-size: 1.5rem; font-weight: 900; color: white; letter-spacing: -0.5px; line-height: 1.2; margin-bottom: 0.5rem; }
+    .how-visual p { font-size: 0.875rem; color: rgba(255,255,255,0.6); margin-bottom: 2rem; }
     .call-pill {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: white;
-      color: var(--green);
-      padding: 12px 22px;
-      border-radius: 100px;
-      font-size: 1rem;
-      font-weight: 800;
-      text-decoration: none;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.2);
-      transition: transform .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: white; color: var(--green);
+      padding: 12px 22px; border-radius: 100px;
+      font-size: 1rem; font-weight: 800; text-decoration: none;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.2); transition: transform .2s;
     }
     .call-pill:hover { transform: scale(1.04); }
-
     .resp-badge {
-      display: inline-block;
-      margin-top: 1.25rem;
-      background: rgba(255,255,255,0.1);
-      border: 1px solid rgba(255,255,255,0.2);
-      color: rgba(255,255,255,0.75);
-      padding: 6px 14px;
-      border-radius: 100px;
-      font-size: 0.72rem;
-      font-weight: 600;
+      display: inline-block; margin-top: 1.25rem;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: rgba(255,255,255,0.75); padding: 6px 14px; border-radius: 100px;
+      font-size: 0.72rem; font-weight: 600;
     }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        WHY US
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
-    .why {
-      background: var(--green);
-      position: relative;
-      overflow: hidden;
-    }
-
+    .why { background: var(--green); position: relative; overflow: hidden; }
     .why::before {
-      content: '';
-      position: absolute;
-      top: -100px; right: -100px;
-      width: 400px; height: 400px;
-      background: rgba(201,162,39,0.07);
-      border-radius: 50%;
+      content: ''; position: absolute; top: -100px; right: -100px;
+      width: 400px; height: 400px; background: rgba(201,162,39,0.07); border-radius: 50%;
     }
-
     .why .sec-title { color: white; }
     .why .sec-sub { color: rgba(255,255,255,0.55); }
     .why-header { text-align: center; margin-bottom: 3.5rem; }
-
-    .why-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
     .why-card {
       background: rgba(255,255,255,0.06);
-      border: 1.5px solid rgba(255,255,255,0.1);
-      border-radius: 18px;
-      padding: 1.75rem;
+      border: 1.5px solid rgba(255,255,255,0.1); border-radius: 18px; padding: 1.75rem;
       transition: all .25s;
     }
-    .why-card:hover {
-      background: rgba(255,255,255,0.1);
-      border-color: rgba(201,162,39,0.4);
-      transform: translateY(-3px);
-    }
-
+    .why-card:hover { background: rgba(255,255,255,0.1); border-color: rgba(201,162,39,0.4); transform: translateY(-3px); }
     .why-icon { font-size: 2rem; margin-bottom: 1rem; }
     .why-card h4 { font-size: 1rem; font-weight: 800; color: white; margin-bottom: 0.4rem; }
     .why-card p { font-size: 0.85rem; color: rgba(255,255,255,0.5); line-height: 1.6; }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
-       BEFORE / AFTER
+       BEFORE / AFTER (slider)
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .gallery { background: var(--gray-50); }
-
     .gallery-header { margin-bottom: 3rem; }
-
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
+    .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
     .gallery-pair {
-      border-radius: 18px;
-      overflow: hidden;
-      border: 1.5px solid var(--gray-200);
-      background: white;
+      border-radius: 18px; overflow: hidden;
+      border: 1.5px solid var(--gray-200); background: white;
     }
-
-    .gallery-imgs {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 0;
-    }
-
-    .gallery-img {
-      aspect-ratio: 4/3;
-      background: var(--gray-100);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      position: relative;
-    }
-
-    .gallery-img-label {
-      position: absolute;
-      bottom: 6px; left: 6px;
-      font-size: 0.65rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 3px 8px;
-      border-radius: 100px;
-    }
-
-    .label-before { background: rgba(0,0,0,0.5); color: white; }
-    .label-after { background: var(--green); color: white; }
-
     .gallery-caption {
-      padding: 0.875rem 1rem;
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--gray-600);
-      border-top: 1px solid var(--gray-100);
+      padding: 0.875rem 1rem; font-size: 0.8rem; font-weight: 600;
+      color: var(--gray-600); border-top: 1px solid var(--gray-100);
     }
-
+    .ba-slider {
+      position: relative; overflow: hidden;
+      cursor: ew-resize; user-select: none;
+      height: 180px;
+    }
+    .ba-before {
+      position: absolute; inset: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+    }
+    .ba-after-wrap {
+      position: absolute; top: 0; bottom: 0; left: 0;
+      width: 50%; overflow: hidden;
+    }
+    .ba-after-inner {
+      position: absolute; top: 0; bottom: 0; left: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+    }
+    .ba-handle {
+      position: absolute; top: 0; bottom: 0; left: 50%;
+      width: 3px; background: white;
+      transform: translateX(-50%); z-index: 5; cursor: ew-resize;
+    }
+    .ba-handle-btn {
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 34px; height: 34px; background: white; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; box-shadow: 0 3px 10px rgba(0,0,0,0.25); color: var(--green); font-weight: 900;
+    }
+    .ba-label-b, .ba-label-a {
+      position: absolute; bottom: 8px; z-index: 6;
+      font-size: 0.65rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.5px; padding: 3px 8px; border-radius: 100px;
+    }
+    .ba-label-b { left: 8px; background: rgba(0,0,0,0.5); color: white; }
+    .ba-label-a { right: 8px; background: var(--green); color: white; }
+    .ba-hint {
+      position: absolute; top: 8px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,0.45); color: white; font-size: 0.6rem;
+      font-weight: 600; padding: 2px 8px; border-radius: 100px; z-index: 6;
+      white-space: nowrap; pointer-events: none; transition: opacity .4s;
+    }
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        TESTIMONIALS
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .testimonials { background: white; }
     .testimonials-header { text-align: center; margin-bottom: 3rem; }
-
-    .test-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 1.25rem;
-    }
-
+    .test-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
     .test-card {
-      background: var(--gray-50);
-      border-radius: 18px;
-      padding: 1.75rem;
-      border: 1.5px solid var(--gray-200);
-      transition: all .2s;
+      background: var(--gray-50); border-radius: 18px; padding: 1.75rem;
+      border: 1.5px solid var(--gray-200); transition: all .2s;
     }
     .test-card:hover { box-shadow: 0 10px 36px rgba(0,0,0,0.07); transform: translateY(-2px); }
-
     .stars { color: var(--gold); font-size: 0.9rem; margin-bottom: 0.875rem; }
-
-    .test-text {
-      font-size: 0.9rem;
-      color: var(--gray-600);
-      line-height: 1.7;
-      font-style: italic;
-      margin-bottom: 1.25rem;
-    }
-
+    .test-text { font-size: 0.9rem; color: var(--gray-600); line-height: 1.7; font-style: italic; margin-bottom: 1.25rem; }
     .test-author { display: flex; align-items: center; gap: 10px; }
-
     .author-av {
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      background: var(--green);
-      color: white;
-      font-weight: 800;
-      font-size: 0.9rem;
-      display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0;
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--green); color: white;
+      font-weight: 800; font-size: 0.9rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
     }
-
     .author-name { font-size: 0.875rem; font-weight: 700; color: var(--green); }
     .author-loc { font-size: 0.75rem; color: var(--gray-400); }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        FAQ
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .faq { background: var(--gray-50); }
-
-    .faq-layout {
-      display: grid;
-      grid-template-columns: 1fr 1.4fr;
-      gap: 4rem;
-      align-items: start;
-    }
-
+    .faq-layout { display: grid; grid-template-columns: 1fr 1.4fr; gap: 4rem; align-items: start; }
     .faq-left .sec-sub { margin-bottom: 1.5rem; }
-
     .faq-cta {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: var(--green);
-      color: white;
-      padding: 12px 22px;
-      border-radius: 10px;
-      font-size: 0.875rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--green); color: white;
+      padding: 12px 22px; border-radius: 10px;
+      font-size: 0.875rem; font-weight: 700; text-decoration: none; transition: all .2s;
     }
     .faq-cta:hover { background: var(--green-light); }
-
     .faq-list { display: flex; flex-direction: column; gap: 0.75rem; }
-
     .faq-item {
-      background: white;
-      border: 1.5px solid var(--gray-200);
-      border-radius: 14px;
-      overflow: hidden;
-      transition: border-color .2s;
+      background: white; border: 1.5px solid var(--gray-200);
+      border-radius: 14px; overflow: hidden; transition: border-color .2s;
     }
     .faq-item:hover { border-color: var(--green-pale2); }
-
     .faq-q {
-      padding: 1.1rem 1.25rem;
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--green);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      gap: 0.5rem;
+      padding: 1.1rem 1.25rem; font-size: 0.9rem; font-weight: 700; color: var(--green);
+      display: flex; justify-content: space-between; align-items: center;
+      cursor: pointer; gap: 0.5rem;
     }
-
     .faq-toggle {
-      width: 24px; height: 24px;
-      border-radius: 50%;
-      background: var(--green-pale);
-      color: var(--green);
+      width: 24px; height: 24px; border-radius: 50%;
+      background: var(--green-pale); color: var(--green);
       display: flex; align-items: center; justify-content: center;
-      font-size: 1rem;
-      flex-shrink: 0;
-      transition: all .2s;
+      font-size: 1rem; flex-shrink: 0; transition: all .2s;
     }
-
-    .faq-a {
-      padding: 0 1.25rem 1.1rem;
-      font-size: 0.85rem;
-      color: var(--gray-600);
-      line-height: 1.7;
-      display: none;
-    }
-
+    .faq-a { padding: 0 1.25rem 1.1rem; font-size: 0.85rem; color: var(--gray-600); line-height: 1.7; display: none; }
     .faq-item.open .faq-a { display: block; }
     .faq-item.open .faq-toggle { background: var(--green); color: white; transform: rotate(45deg); }
     .faq-item.open { border-color: var(--green-pale2); }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        CTA BANNER
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .cta-banner {
       background: linear-gradient(135deg, var(--green) 0%, var(--green-light) 100%);
-      padding: 4.5rem 2.5rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
+      padding: 4.5rem 2.5rem; text-align: center;
+      position: relative; overflow: hidden;
     }
-
     .cta-banner::before {
-      content: '';
-      position: absolute;
-      top: -80px; left: 50%;
-      transform: translateX(-50%);
-      width: 600px; height: 200px;
-      background: rgba(201,162,39,0.08);
-      border-radius: 50%;
+      content: ''; position: absolute; top: -80px; left: 50%; transform: translateX(-50%);
+      width: 600px; height: 200px; background: rgba(201,162,39,0.08); border-radius: 50%;
     }
-
     .cta-banner h2 {
-      font-size: clamp(2rem, 4vw, 3rem);
-      font-weight: 900;
-      color: white;
-      letter-spacing: -1.5px;
-      line-height: 1.1;
-      margin-bottom: 0.875rem;
-      position: relative;
+      font-size: clamp(2rem, 4vw, 3rem); font-weight: 900; color: white;
+      letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 0.875rem; position: relative;
     }
-
-    .cta-banner h2 em {
-      font-style: normal;
-      color: var(--gold-border);
-    }
-
-    .cta-banner p {
-      color: rgba(255,255,255,0.65);
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      position: relative;
-    }
-
+    .cta-banner h2 em { font-style: normal; color: var(--gold-border); }
+    .cta-banner p { color: rgba(255,255,255,0.65); font-size: 1rem; margin-bottom: 2rem; position: relative; }
     .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; position: relative; }
-
     .btn-gold {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: var(--gold);
-      color: white;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: all .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold); color: white;
+      padding: 15px 30px; border-radius: 10px;
+      font-size: 1rem; font-weight: 700; text-decoration: none; transition: all .2s;
       box-shadow: 0 8px 24px rgba(201,162,39,0.4);
     }
     .btn-gold:hover { background: #B8911E; transform: translateY(-2px); }
-
     .btn-white-outline {
-      display: inline-flex;
-      align-items: center; gap: 8px;
-      background: transparent;
-      border: 2px solid rgba(255,255,255,0.4);
-      color: white;
-      padding: 15px 30px;
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: all .2s;
+      display: inline-flex; align-items: center; gap: 8px;
+      background: transparent; border: 2px solid rgba(255,255,255,0.4); color: white;
+      padding: 15px 30px; border-radius: 10px;
+      font-size: 1rem; font-weight: 600; text-decoration: none; transition: all .2s;
     }
     .btn-white-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        FOOTER
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
-    footer {
-      background: var(--navy);
-      padding: 3.5rem 2.5rem 2rem;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-
-    .footer-brand p {
-      font-size: 0.83rem;
-      color: rgba(255,255,255,0.4);
-      line-height: 1.7;
-      margin-top: 0.75rem;
-      max-width: 210px;
-    }
-
-    .footer-col h5 {
-      font-size: 0.72rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: rgba(255,255,255,0.6);
-      margin-bottom: 1rem;
-    }
-
+    footer { background: var(--navy); padding: 3.5rem 2.5rem 2rem; }
+    .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 3rem; margin-bottom: 3rem; }
+    .footer-brand p { font-size: 0.83rem; color: rgba(255,255,255,0.4); line-height: 1.7; margin-top: 0.75rem; max-width: 210px; }
+    .footer-col h5 { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: rgba(255,255,255,0.6); margin-bottom: 1rem; }
     .footer-col ul { list-style: none; }
     .footer-col li { margin-bottom: 0.55rem; }
-    .footer-col a {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.4);
-      text-decoration: none;
-      transition: color .2s;
-    }
+    .footer-col a { font-size: 0.85rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color .2s; }
     .footer-col a:hover { color: var(--gold); }
-
     .footer-bottom {
-      border-top: 1px solid rgba(255,255,255,0.07);
-      padding-top: 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 0.75rem;
+      border-top: 1px solid rgba(255,255,255,0.07); padding-top: 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 0.75rem;
     }
-
     .footer-bottom p { font-size: 0.78rem; color: rgba(255,255,255,0.3); }
-
     .footer-chips { display: flex; gap: 0.6rem; }
     .footer-chip {
-      background: rgba(255,255,255,0.05);
-      border: 1px solid rgba(255,255,255,0.08);
-      color: rgba(255,255,255,0.3);
-      font-size: 0.68rem;
-      font-weight: 600;
-      padding: 3px 9px;
-      border-radius: 6px;
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.3); font-size: 0.68rem; font-weight: 600;
+      padding: 3px 9px; border-radius: 6px;
     }
-
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
-       FLOATING CALL BTN
+       FLOATING BUTTONS
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .fab {
-      position: fixed;
-      bottom: 1.75rem;
-      right: 1.75rem;
-      z-index: 300;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 8px;
+      position: fixed; bottom: 1.75rem; right: 1.75rem; z-index: 300;
+      display: flex; flex-direction: column; align-items: flex-end; gap: 8px;
     }
-
-    .fab-label {
-      background: var(--navy);
-      color: white;
-      font-size: 0.72rem;
-      font-weight: 700;
-      padding: 5px 12px;
-      border-radius: 8px;
+    .fab-label, .fab-wa-label {
+      background: var(--navy); color: white;
+      font-size: 0.72rem; font-weight: 700; padding: 5px 12px; border-radius: 8px;
     }
-
+    .fab-wa-label { background: #1a9e4e; }
     .fab-btn {
-      width: 58px; height: 58px;
-      background: var(--green);
-      border-radius: 50%;
+      width: 58px; height: 58px; background: var(--green); border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
       font-size: 1.5rem;
       box-shadow: 0 8px 28px rgba(26,92,42,0.5);
-      text-decoration: none;
-      animation: pulse 2s infinite;
+      text-decoration: none; animation: pulse 2s infinite;
     }
-
+    .fab-wa {
+      width: 58px; height: 58px; background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem;
+      box-shadow: 0 8px 28px rgba(37,211,102,0.45);
+      text-decoration: none; animation: pulse-wa 2.5s infinite;
+    }
     @keyframes pulse {
       0%   { box-shadow: 0 0 0 0   rgba(26,92,42,0.5); }
       70%  { box-shadow: 0 0 0 14px rgba(26,92,42,0); }
       100% { box-shadow: 0 0 0 0   rgba(26,92,42,0); }
     }
-
+    @keyframes pulse-wa {
+      0%   { box-shadow: 0 0 0 0   rgba(37,211,102,0.5); }
+      70%  { box-shadow: 0 0 0 12px rgba(37,211,102,0); }
+      100% { box-shadow: 0 0 0 0   rgba(37,211,102,0); }
+    }
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        HAMBURGER MENU
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
     .hamburger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 6px;
-      border-radius: 8px;
-      transition: background .2s;
-      background: none;
-      border: none;
+      display: none; flex-direction: column; gap: 5px; cursor: pointer;
+      padding: 6px; border-radius: 8px; transition: background .2s;
+      background: none; border: none;
     }
     .hamburger:hover { background: var(--gray-100); }
-    .hamburger span {
-      display: block;
-      width: 22px; height: 2px;
-      background: var(--green);
-      border-radius: 2px;
-      transition: all .3s;
-    }
+    .hamburger span { display: block; width: 22px; height: 2px; background: var(--green); border-radius: 2px; transition: all .3s; }
     .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
     .hamburger.open span:nth-child(2) { opacity: 0; }
     .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
-
     .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 70px; left: 0; right: 0;
-      background: white;
-      border-bottom: 1px solid var(--gray-200);
-      z-index: 199;
-      padding: 1.25rem 1.5rem 1.5rem;
+      display: none; position: fixed; top: 70px; left: 0; right: 0;
+      background: white; border-bottom: 1px solid var(--gray-200);
+      z-index: 199; padding: 1.25rem 1.5rem 1.5rem;
       box-shadow: 0 8px 32px rgba(0,0,0,0.1);
-      flex-direction: column;
-      gap: 0;
+      flex-direction: column; gap: 0;
     }
     .mobile-menu.open { display: flex; }
-
-    .mobile-menu-links {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      border-bottom: 1px solid var(--gray-100);
-      margin-bottom: 1rem;
-      padding-bottom: 1rem;
-    }
-    .mobile-menu-links li a {
-      display: block;
-      padding: 0.75rem 0;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--gray-800);
-      text-decoration: none;
-      border-bottom: 1px solid var(--gray-50);
-      transition: color .2s;
-    }
+    .mobile-menu-links { list-style: none; display: flex; flex-direction: column; border-bottom: 1px solid var(--gray-100); margin-bottom: 1rem; padding-bottom: 1rem; }
+    .mobile-menu-links li a { display: block; padding: 0.75rem 0; font-size: 1rem; font-weight: 600; color: var(--gray-800); text-decoration: none; border-bottom: 1px solid var(--gray-50); transition: color .2s; }
     .mobile-menu-links li:last-child a { border-bottom: none; }
     .mobile-menu-links li a:hover { color: var(--green); }
-
-    .mobile-menu-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
+    .mobile-menu-actions { display: flex; flex-direction: column; gap: 0.6rem; }
+    .mobile-menu-tel { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px; border: 2px solid var(--green); border-radius: 10px; font-size: 1rem; font-weight: 700; color: var(--green); text-decoration: none; }
+    .mobile-menu-cta { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 13px; background: var(--green); border-radius: 10px; font-size: 1rem; font-weight: 700; color: white; text-decoration: none; }
+    /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
+       SCROLL PROGRESS BAR
+    ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
+    #scrollProgress {
+      position: fixed; top: 0; left: 0; z-index: 9999;
+      height: 3px; width: 0;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+      pointer-events: none; transition: width .08s linear;
     }
-    .mobile-menu-tel {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 13px;
-      border: 2px solid var(--green);
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--green);
-      text-decoration: none;
+    /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
+       TOAST
+    ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
+    .toast {
+      position: fixed; bottom: 2rem; left: 50%;
+      transform: translateX(-50%) translateY(120px);
+      background: var(--green); color: white;
+      padding: 14px 26px; border-radius: 14px;
+      font-size: 0.9rem; font-weight: 700;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25); z-index: 1000;
+      transition: transform .45s cubic-bezier(.34,1.56,.64,1);
+      display: flex; align-items: center; gap: 10px; white-space: nowrap;
     }
-    .mobile-menu-cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 8px;
-      padding: 13px;
-      background: var(--green);
-      border-radius: 10px;
-      font-size: 1rem;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
+    .toast.show { transform: translateX(-50%) translateY(0); }
+    /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
+       TYPING CURSOR
+    ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
+    .type-cursor {
+      display: inline-block; width: 4px; height: 0.75em;
+      background: var(--gold); margin-left: 3px;
+      vertical-align: middle; border-radius: 2px;
+      animation: blink .75s infinite;
     }
-
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+    /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
+       CALCULATOR BUTTON
+    ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
+    .btn-calc-trigger {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold-light); border: 2px solid var(--gold-border); color: #8a6d10;
+      padding: 14px 24px; border-radius: 10px;
+      font-size: 0.9rem; font-weight: 700; cursor: pointer;
+      transition: all .2s; font-family: 'Inter', sans-serif;
+    }
+    .btn-calc-trigger:hover { background: #FDF0C0; border-color: var(--gold); }
+    /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
+       CALCULATOR MODAL
+    ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
+    .calc-overlay {
+      display: none; position: fixed; inset: 0;
+      background: rgba(0,0,0,0.6); z-index: 600;
+      align-items: center; justify-content: center;
+      padding: 1rem; backdrop-filter: blur(4px);
+    }
+    .calc-overlay.open { display: flex; }
+    .calc-modal {
+      background: white; border-radius: 24px; padding: 2.25rem;
+      max-width: 500px; width: 100%; position: relative;
+      max-height: 90vh; overflow-y: auto;
+    }
+    .calc-close {
+      position: absolute; top: 1rem; right: 1rem;
+      background: var(--gray-100); border: none;
+      width: 32px; height: 32px; border-radius: 50%;
+      cursor: pointer; font-size: 1.1rem; font-weight: 700;
+      color: var(--gray-600); display: flex; align-items: center; justify-content: center;
+    }
+    .calc-close:hover { background: var(--gray-200); }
+    .calc-progress { display: flex; gap: .4rem; margin-bottom: 1.75rem; }
+    .calc-prog-dot { flex: 1; height: 4px; border-radius: 2px; background: var(--gray-200); transition: background .3s; }
+    .calc-prog-dot.done { background: var(--green); }
+    .calc-step-title { font-size: 1.1rem; font-weight: 900; color: var(--green); margin-bottom: .25rem; letter-spacing: -.3px; }
+    .calc-step-sub { font-size: .78rem; color: var(--gray-400); margin-bottom: 1.25rem; }
+    .calc-options { display: grid; grid-template-columns: 1fr 1fr; gap: .65rem; }
+    .calc-opt {
+      padding: .9rem .75rem; border: 2px solid var(--gray-200); border-radius: 12px;
+      cursor: pointer; text-align: center; transition: all .2s; background: var(--gray-50);
+    }
+    .calc-opt:hover, .calc-opt.sel { border-color: var(--green); background: var(--green-pale); }
+    .calc-opt-icon { font-size: 1.6rem; margin-bottom: .3rem; }
+    .calc-opt-label { font-size: .78rem; font-weight: 700; color: var(--green); }
+    .calc-nav { display: flex; justify-content: space-between; align-items: center; margin-top: 1.4rem; gap: .75rem; }
+    .calc-next {
+      background: var(--green); color: white; border: none;
+      padding: 11px 22px; border-radius: 9px;
+      font-size: .875rem; font-weight: 700; cursor: pointer;
+      transition: background .2s; font-family: 'Inter', sans-serif;
+    }
+    .calc-next:hover { background: var(--green-light); }
+    .calc-next:disabled { background: var(--gray-200); color: var(--gray-400); cursor: not-allowed; }
+    .calc-back { background: none; border: none; color: var(--gray-400); font-size: .85rem; cursor: pointer; font-family: 'Inter', sans-serif; }
+    .calc-panel { display: none; }
+    .calc-panel.active { display: block; }
+    .calc-result-box {
+      background: var(--green-pale); border: 2px solid var(--green-pale2);
+      border-radius: 16px; padding: 1.5rem; text-align: center; margin: 1rem 0;
+    }
+    .calc-price { font-size: 2.2rem; font-weight: 900; color: var(--green); letter-spacing: -1px; }
+    .calc-price-note { font-size: .75rem; color: var(--gray-400); margin-top: .3rem; }
+    .calc-result-tips { list-style: none; text-align: left; margin: 1rem 0; display: flex; flex-direction: column; gap: .5rem; }
+    .calc-result-tips li { font-size: .82rem; color: var(--gray-600); display: flex; align-items: flex-start; gap: 8px; }
     /* ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź
        RESPONSIVE
     ‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź‚ēź */
@@ -1225,7 +767,6 @@
       .announce-bar { font-size: 0.78rem; padding: 8px 1rem; gap: 0.4rem; }
       .announce-bar .announce-extra { display: none; }
     }
-
     @media (max-width: 600px) {
       .services-grid, .why-grid, .test-grid, .gallery-grid { grid-template-columns: 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
@@ -1235,10 +776,13 @@
       .hero h1 { font-size: 2.4rem; letter-spacing: -1.5px; }
       .hero-desc { font-size: 0.95rem; }
       section { padding: 3rem 1rem; }
+      .toast { white-space: normal; text-align: center; width: 90%; }
     }
   </style>
 </head>
 <body>
+
+  <div id="scrollProgress"></div>
 
   <!-- NAV -->
   <nav>
@@ -1282,13 +826,14 @@
     <span id="announce-text">Vykl√≠z√≠me Po‚ÄďNe</span>
     <span class="announce-extra"> ¬∑ </span>
     <span class="announce-extra" id="announce-sub">Vykl√≠z√≠me i o sv√°tc√≠ch ¬∑ VŇĺdy diskr√©tnńõ a rychle</span>
+    <span class="announce-extra" id="cdTimer"></span>
   </div>
 
   <!-- HERO -->
-  <div class="hero">
+  <div class="hero" id="uvod">
     <div class="hero-left">
       <div class="hero-eyebrow">ūüöõ Rychl√© vykl√≠zen√≠ za rozumnou cenu</div>
-      <h1>VYKL√ćZEN√ć<br>NEMOVITOST√ć</h1>
+      <h1>VYKL√ćZEN√ć<br><span id="heroType">NEMOVITOST√ć</span><span class="type-cursor"></span></h1>
       <p class="hero-desc">Expresnńõ, peńćlivńõ, spolehlivńõ, diskr√©tnńõ.<br>VŇ°e co potŇôebujete od A do Z bez starost√≠.</p>
       <div class="hero-pills">
         <div class="hero-pill">‚úÖ Pevn√° cena pŇôedem</div>
@@ -1298,7 +843,7 @@
       </div>
       <div class="hero-cta-group">
         <a href="#kontakt" class="btn-primary">ūüďč Kalkulace zdarma</a>
-        <a href="tel:+420607481024" class="btn-outline">ūüďě 607 481 024</a>
+        <button class="btn-calc-trigger" onclick="openCalc()">ūüßģ Orientańćn√≠ cena</button>
       </div>
     </div>
 
@@ -1307,37 +852,34 @@
         <div class="form-badge">‚ö° PrŇĮmńõrn√° doba odpovńõdi: 3 hod.</div>
         <h3>Kalkulace zdarma</h3>
         <p>VyplŇąte formul√°Ňô a ozveme se co nejdŇô√≠ve. ‚ėÖ‚ėÖ‚ėÖ‚ėÖ‚ėÖ (5)</p>
-
         <form
           action="https://formsubmit.co/astepevents@gmail.com"
           method="POST"
           enctype="multipart/form-data"
           id="kalkulaceForm"
         >
-          <!-- FormSubmit konfigurace -->
           <input type="hidden" name="_cc" value="faigy@seznam.cz" />
           <input type="hidden" name="_subject" value="Nov√° popt√°vka ‚Äď VyklizeniExpert" />
-          <input type="hidden" name="_captcha" value="false" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_next" value="https://www.vyklizeniexpert.cz/?odeslano=1" />
-
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="fg-row">
             <div class="fg">
               <label>Jm√©no *</label>
-              <input type="text" name="jmeno" placeholder="Jan" required />
+              <input type="text" name="jmeno" placeholder="Jan" required autocomplete="given-name" />
             </div>
             <div class="fg">
               <label>PŇô√≠jmen√≠ *</label>
-              <input type="text" name="prijmeni" placeholder="Nov√°k" required />
+              <input type="text" name="prijmeni" placeholder="Nov√°k" required autocomplete="family-name" />
             </div>
           </div>
           <div class="fg">
             <label>Email *</label>
-            <input type="email" name="email" placeholder="vas@email.cz" required />
+            <input type="email" name="email" placeholder="vas@email.cz" required autocomplete="email" />
           </div>
           <div class="fg">
             <label>Telefon *</label>
-            <input type="tel" name="telefon" placeholder="+420 607 481 024" required />
+            <input type="tel" name="telefon" placeholder="+420 607 481 024" required autocomplete="tel" />
           </div>
           <div class="fg">
             <label>Kde potŇôebujete vyklidit? (mńõsto/PSńĆ) *</label>
@@ -1360,45 +902,40 @@
             <label>DalŇ°√≠ bliŇĺŇ°√≠ informace</label>
             <textarea name="zprava" placeholder="Struńćnńõ popiŇ°te situaci ‚ÄĒ patro, pŇô√≠stup, term√≠n..." style="resize:vertical;min-height:70px;"></textarea>
           </div>
-
-          <!-- UPLOAD FOTEK -->
           <div class="fg fg-upload">
             <label for="fotoUpload">
               <span class="upload-icon">ūüďł</span>
               <span>PŇôiloŇĺit fotky nemovitosti</span>
               <span class="upload-hint">JPG, PNG, HEIC ¬∑ max. 5 fotek ¬∑ 10 MB celkem</span>
             </label>
-            <input
-              type="file"
-              id="fotoUpload"
-              name="foto"
-              accept="image/*"
-              multiple
-              onchange="showFileNames(this)"
-            />
+            <input type="file" id="fotoUpload" name="foto" accept="image/*" multiple onchange="showFileNames(this)" />
             <div class="file-list" id="fileList"></div>
           </div>
-
-          <button type="submit" class="form-submit-btn">Odeslat ‚Üí</button>
+          <div class="gdpr-row">
+            <input type="checkbox" id="gdprCheck" name="gdpr_souhlas" required />
+            <label for="gdprCheck">
+              Souhlas√≠m se <a href="/zasady-ochrany-osobnich-udaju" target="_blank" rel="noopener">zpracov√°n√≠m osobn√≠ch √ļdajŇĮ</a> za √ļńćelem vyŇô√≠zen√≠ popt√°vky (GDPR). VaŇ°e √ļdaje slouŇĺ√≠ v√Ĺhradnńõ ke zpracov√°n√≠ popt√°vky a nebudou sd√≠leny s tŇôet√≠mi stranami.
+            </label>
+          </div>
+          <button type="submit" class="form-submit-btn" id="formSubmitBtn">Odeslat ‚Üí</button>
           <p class="form-trust">ūüĒí VaŇ°e data jsou v bezpeńć√≠ ¬∑ Bez z√°vazkŇĮ</p>
         </form>
       </div>
-
       <div class="hero-stats">
         <div class="h-stat">
-          <div class="h-stat-num">1200<em>+</em></div>
+          <div class="h-stat-num" data-target="1200" data-suffix="+"><span class="cnt-num">1200</span><em>+</em></div>
           <div class="h-stat-label">Zak√°zek</div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-num">24<em>h</em></div>
+          <div class="h-stat-num" data-target="24" data-suffix="h"><span class="cnt-num">24</span><em>h</em></div>
           <div class="h-stat-label">N√°stup</div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-num">4.9<em>‚ėÖ</em></div>
+          <div class="h-stat-num" data-target="49" data-suffix="‚ėÖ" data-decimal="1"><span class="cnt-num">4.9</span><em>‚ėÖ</em></div>
           <div class="h-stat-label">Hodnocen√≠</div>
         </div>
         <div class="h-stat">
-          <div class="h-stat-num">100<em>%</em></div>
+          <div class="h-stat-num" data-target="100" data-suffix="%"><span class="cnt-num">100</span><em>%</em></div>
           <div class="h-stat-label">Ekologicky</div>
         </div>
       </div>
@@ -1529,36 +1066,12 @@
         <p class="sec-sub" style="margin:0 auto;">Nejsme anonymn√≠ firma. Za kaŇĺdou zak√°zkou stoj√≠me jm√©nem i reputac√≠.</p>
       </div>
       <div class="why-grid">
-        <div class="why-card">
-          <div class="why-icon">‚ö°</div>
-          <h4>Expresn√≠ term√≠ny</h4>
-          <p>N√°stup do 24 hodin od objedn√°vky. Pracujeme i o v√≠kendech a sv√°tc√≠ch.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">ūüíį</div>
-          <h4>Pevn√° cena</h4>
-          <p>Cena domluven√° pŇôedem. ŇĹ√°dn√© skryt√© poplatky ani pŇôekvapen√≠ po dokonńćen√≠.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">ūüõ°ÔłŹ</div>
-          <h4>PojiŇ°tńõn√° firma</h4>
-          <p>Pln√° zodpovńõdnost za vaŇ°i nemovitost. Pojistka kryje pŇô√≠padn√© Ň°kody.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">‚ôĽÔłŹ</div>
-          <h4>Certifikovan√° likvidace</h4>
-          <p>Ekologick√° likvidace v souladu se z√°konem. Vyd√°v√°me doklady pro √ļŇôady.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">ūüíé</div>
-          <h4>V√Ĺkup cennost√≠</h4>
-          <p>StaroŇĺitnosti, n√°bytek nebo elektronika? Co m√° hodnotu, odkoup√≠me a sn√≠Ňĺ√≠ to cenu vykl√≠zen√≠.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-icon">ūü§Ě</div>
-          <h4>Diskr√©tn√≠ pŇô√≠stup</h4>
-          <p>PozŇĮstalosti a citliv√© situace ŇôeŇ°√≠me s maxim√°ln√≠ ohleduplnost√≠ a taktem.</p>
-        </div>
+        <div class="why-card"><div class="why-icon">‚ö°</div><h4>Expresn√≠ term√≠ny</h4><p>N√°stup do 24 hodin od objedn√°vky. Pracujeme i o v√≠kendech a sv√°tc√≠ch.</p></div>
+        <div class="why-card"><div class="why-icon">ūüíį</div><h4>Pevn√° cena</h4><p>Cena domluven√° pŇôedem. ŇĹ√°dn√© skryt√© poplatky ani pŇôekvapen√≠ po dokonńćen√≠.</p></div>
+        <div class="why-card"><div class="why-icon">ūüõ°ÔłŹ</div><h4>PojiŇ°tńõn√° firma</h4><p>Pln√° zodpovńõdnost za vaŇ°i nemovitost. Pojistka kryje pŇô√≠padn√© Ň°kody.</p></div>
+        <div class="why-card"><div class="why-icon">‚ôĽÔłŹ</div><h4>Certifikovan√° likvidace</h4><p>Ekologick√° likvidace v souladu se z√°konem. Vyd√°v√°me doklady pro √ļŇôady.</p></div>
+        <div class="why-card"><div class="why-icon">ūüíé</div><h4>V√Ĺkup cennost√≠</h4><p>StaroŇĺitnosti, n√°bytek nebo elektronika? Co m√° hodnotu, odkoup√≠me a sn√≠Ňĺ√≠ to cenu vykl√≠zen√≠.</p></div>
+        <div class="why-card"><div class="why-icon">ūü§Ě</div><h4>Diskr√©tn√≠ pŇô√≠stup</h4><p>PozŇĮstalosti a citliv√© situace ŇôeŇ°√≠me s maxim√°ln√≠ ohleduplnost√≠ a taktem.</p></div>
       </div>
     </div>
   </section>
@@ -1569,39 +1082,36 @@
       <div class="gallery-header">
         <div class="sec-label">Portfolio</div>
         <h2 class="sec-title">NaŇ°e pr√°ce</h2>
-        <p class="sec-sub">Uk√°zky dokonńćen√Ĺch zak√°zek ‚ÄĒ pŇôed a po vykl√≠zen√≠.</p>
+        <p class="sec-sub">Uk√°zky dokonńćen√Ĺch zak√°zek ‚ÄĒ t√°hnńõte jezdcem pro porovn√°n√≠ pŇôed a po vykl√≠zen√≠.</p>
       </div>
       <div class="gallery-grid">
         <div class="gallery-pair">
-          <div class="gallery-imgs">
-            <div class="gallery-img" style="background:#2a2a2a; font-size:3rem;">ūüóāÔłŹ
-              <div class="gallery-img-label label-before">PŇôed</div>
-            </div>
-            <div class="gallery-img" style="background:var(--green-pale); font-size:3rem;">‚ú®
-              <div class="gallery-img-label label-after">Po</div>
-            </div>
+          <div class="ba-slider">
+            <div class="ba-before" style="background:#2a2a2a;"><span style="font-size:3rem">ūüóāÔłŹ</span></div>
+            <div class="ba-after-wrap"><div class="ba-after-inner" style="background:var(--green-pale);"><span style="font-size:3rem">‚ú®</span></div></div>
+            <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">‚üļ</div></div>
+            <div class="ba-label-b">PŇôed</div><div class="ba-label-a">Po</div>
+            <div class="ba-hint">‚Üź T√°hnńõte ‚Üí</div>
           </div>
           <div class="gallery-caption">ūüŹ† Vykl√≠zen√≠ bytu 3+1 ¬∑ Praha 4</div>
         </div>
         <div class="gallery-pair">
-          <div class="gallery-imgs">
-            <div class="gallery-img" style="background:#1a1a1a; font-size:3rem;">ūüď¶
-              <div class="gallery-img-label label-before">PŇôed</div>
-            </div>
-            <div class="gallery-img" style="background:var(--green-pale); font-size:3rem;">ūüĆŅ
-              <div class="gallery-img-label label-after">Po</div>
-            </div>
+          <div class="ba-slider">
+            <div class="ba-before" style="background:#1a1a1a;"><span style="font-size:3rem">ūüď¶</span></div>
+            <div class="ba-after-wrap"><div class="ba-after-inner" style="background:var(--green-pale);"><span style="font-size:3rem">ūüĆŅ</span></div></div>
+            <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">‚üļ</div></div>
+            <div class="ba-label-b">PŇôed</div><div class="ba-label-a">Po</div>
+            <div class="ba-hint">‚Üź T√°hnńõte ‚Üí</div>
           </div>
           <div class="gallery-caption">ūüŹöÔłŹ Vykl√≠zen√≠ pŇĮdy ¬∑ Rodinn√Ĺ dŇĮm Brno</div>
         </div>
         <div class="gallery-pair">
-          <div class="gallery-imgs">
-            <div class="gallery-img" style="background:#2d2d2d; font-size:3rem;">ūü™Ď
-              <div class="gallery-img-label label-before">PŇôed</div>
-            </div>
-            <div class="gallery-img" style="background:var(--green-pale); font-size:3rem;">ūüŹÜ
-              <div class="gallery-img-label label-after">Po</div>
-            </div>
+          <div class="ba-slider">
+            <div class="ba-before" style="background:#2d2d2d;"><span style="font-size:3rem">ūü™Ď</span></div>
+            <div class="ba-after-wrap"><div class="ba-after-inner" style="background:var(--green-pale);"><span style="font-size:3rem">ūüŹÜ</span></div></div>
+            <div class="ba-handle" style="left:50%"><div class="ba-handle-btn">‚üļ</div></div>
+            <div class="ba-label-b">PŇôed</div><div class="ba-label-a">Po</div>
+            <div class="ba-hint">‚Üź T√°hnńõte ‚Üí</div>
           </div>
           <div class="gallery-caption">ūüď¶ Sklep + gar√°Ňĺ ¬∑ Ostrava</div>
         </div>
@@ -1624,35 +1134,17 @@
         <div class="test-card">
           <div class="stars">‚ėÖ‚ėÖ‚ėÖ‚ėÖ‚ėÖ</div>
           <p class="test-text">‚ÄěPŇôijeli na ńćas, mńõl jsem v domńõ p√°r vńõc√≠ kter√© bylo potŇôeba zachovat a mus√≠m Ňô√≠ct Ňĺe sme se na vŇ°em domluvili jak jsem si pŇôedstavoval a nakonec mi jeŇ°tńõ vyb√≠lili, takŇĺe bez jedin√© v√Ĺtky."</p>
-          <div class="test-author">
-            <div class="author-av">JJ</div>
-            <div>
-              <div class="author-name">Jaroslav J.</div>
-              <div class="author-loc">Spokojen√Ĺ z√°kazn√≠k</div>
-            </div>
-          </div>
+          <div class="test-author"><div class="author-av">JJ</div><div><div class="author-name">Jaroslav J.</div><div class="author-loc">Spokojen√Ĺ z√°kazn√≠k</div></div></div>
         </div>
         <div class="test-card">
           <div class="stars">‚ėÖ‚ėÖ‚ėÖ‚ėÖ‚ėÖ</div>
           <p class="test-text">‚ÄěSuper cena, vŇ°echno bylo rychl√Ĺ, chlapi pŇô√≠jemn√Ĺ."</p>
-          <div class="test-author">
-            <div class="author-av">SK</div>
-            <div>
-              <div class="author-name">SaŇ°a K.</div>
-              <div class="author-loc">Spokojen√° z√°kaznice</div>
-            </div>
-          </div>
+          <div class="test-author"><div class="author-av">SK</div><div><div class="author-name">SaŇ°a K.</div><div class="author-loc">Spokojen√° z√°kaznice</div></div></div>
         </div>
         <div class="test-card">
           <div class="stars">‚ėÖ‚ėÖ‚ėÖ‚ėÖ‚ėÖ</div>
           <p class="test-text">‚ÄěProfesion√°ln√≠ pŇô√≠stup, spolehliv√° firma. Doporuńćuji vŇ°em, kteŇô√≠ potŇôebuj√≠ rychle a bez starost√≠ vyklidit nemovitost."</p>
-          <div class="test-author">
-            <div class="author-av">MN</div>
-            <div>
-              <div class="author-name">Martin N.</div>
-              <div class="author-loc">Spokojen√Ĺ z√°kazn√≠k</div>
-            </div>
-          </div>
+          <div class="test-author"><div class="author-av">MN</div><div><div class="author-name">Martin N.</div><div class="author-loc">Spokojen√Ĺ z√°kazn√≠k</div></div></div>
         </div>
       </div>
     </div>
@@ -1669,62 +1161,14 @@
           <a href="tel:+420607481024" class="faq-cta">ūüďě Zavolat hned</a>
         </div>
         <div class="faq-list">
-          <div class="faq-item open">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Pracujete i o v√≠kendech?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Ano. Vykl√≠zen√≠ bńõŇĺnńõ zajiŇ°Ň•ujeme <strong>tak√© o v√≠kendech</strong>, abychom se co nejl√©pe pŇôizpŇĮsobili vaŇ°emu ńćasu a situaci. Term√≠n domlouv√°me individu√°lnńõ podle vaŇ°ich potŇôeb.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Mus√≠m si zajistit kontejner?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Ne. Kontejner zajiŇ°Ň•ovat nemus√≠te. VeŇ°ker√Ĺ odvoz odpadu m√°me ve vlastn√≠ reŇĺii ‚Äď pŇôijedeme s vlastn√≠m vozem, vŇ°e naloŇĺ√≠me a odvezeme k ekologick√© likvidaci. Pro v√°s je to bez starost√≠ a bez dalŇ°√≠ho zaŇôizov√°n√≠.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Co kdyŇĺ si nejsem jist√Ĺ, co vyhodit a co si ponechat?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Nevad√≠. PŇôed zah√°jen√≠m vykl√≠zen√≠ s v√°mi vŇ°e spoleńćnńõ projdeme a upŇôesn√≠me, pŇô√≠padnńõ vyńćlen√≠me vńõci, kter√© chcete ponechat. Nic nevyhazujeme bez pŇôedchoz√≠ domluvy.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Mus√≠m b√Ĺt bńõhem vykl√≠zen√≠ na m√≠stńõ?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Nemus√≠te. VaŇ°e pŇô√≠tomnost nen√≠ nutn√°. Stańć√≠ zajistit pŇô√≠stup do nemovitosti (napŇô. pŇôed√°n√≠m kl√≠ńćŇĮ). Po dokonńćen√≠ v√°m poŇ°leme fotodokumentaci, prostor uzamkneme a kl√≠ńće bezpeńćnńõ vr√°t√≠me.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              PŇôiprav√≠te byt k prodeji nebo pron√°jmu?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Ano. Po vykl√≠zen√≠ mŇĮŇĺeme zajistit √ļklid, dezinfekci i pŇô√≠padnou v√Ĺmalbu, aby byl byt pŇôipraven√Ĺ k prodeji nebo pron√°jmu a ihned pŇôipraven√Ĺ k pŇôed√°n√≠ nebo nafocen√≠.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Jak√° je cena za vyklizen√≠?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">PŇôesnou cenu sdńõl√≠me jeŇ°tńõ pŇôed pŇô√≠jezdem. Pro nacenńõn√≠ stańć√≠ fotky prostoru a z√°kladn√≠ informace o pŇô√≠stupu. Domluven√° cena je <strong>fixn√≠ a koneńćn√°</strong> ‚Äď bńõhem vykl√≠zen√≠ se nijak nemńõn√≠ a nepŇôid√°vaj√≠ se Ňĺ√°dn√© dalŇ°√≠ poplatky.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Je moŇĺn√© vykl√≠zen√≠ objednat na posledn√≠ chv√≠li?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Ano. SnaŇĺ√≠me se vyhovńõt i kr√°tkodob√Ĺm term√≠nŇĮm. Kontaktujte n√°s co nejdŇô√≠ve a domluv√≠me nejbliŇĺŇ°√≠ moŇĺn√Ĺ term√≠n ‚ÄĒ standardnńõ do 24‚Äď48 hodin.</div>
-          </div>
-          <div class="faq-item">
-            <div class="faq-q" onclick="toggleFaq(this)">
-              Jak prob√≠h√° platba za vykl√≠zen√≠?
-              <div class="faq-toggle">+</div>
-            </div>
-            <div class="faq-a">Platba prob√≠h√° aŇĺ po dokonńćen√≠ vykl√≠zen√≠, kdy si hotovou pr√°ci pŇôevezmete. Uhradit ji mŇĮŇĺete hotovńõ nebo pomoc√≠ QR k√≥du. DaŇąov√Ĺ doklad (fakturu) v√°m n√°slednńõ vŇĺdy zaŇ°leme e-mailem.</div>
-          </div>
+          <div class="faq-item open"><div class="faq-q" onclick="toggleFaq(this)">Pracujete i o v√≠kendech?<div class="faq-toggle">+</div></div><div class="faq-a">Ano. Vykl√≠zen√≠ bńõŇĺnńõ zajiŇ°Ň•ujeme <strong>tak√© o v√≠kendech</strong>, abychom se co nejl√©pe pŇôizpŇĮsobili vaŇ°emu ńćasu a situaci. Term√≠n domlouv√°me individu√°lnńõ podle vaŇ°ich potŇôeb.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Mus√≠m si zajistit kontejner?<div class="faq-toggle">+</div></div><div class="faq-a">Ne. Kontejner zajiŇ°Ň•ovat nemus√≠te. VeŇ°ker√Ĺ odvoz odpadu m√°me ve vlastn√≠ reŇĺii ‚Äď pŇôijedeme s vlastn√≠m vozem, vŇ°e naloŇĺ√≠me a odvezeme k ekologick√© likvidaci. Pro v√°s je to bez starost√≠ a bez dalŇ°√≠ho zaŇôizov√°n√≠.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Co kdyŇĺ si nejsem jist√Ĺ, co vyhodit a co si ponechat?<div class="faq-toggle">+</div></div><div class="faq-a">Nevad√≠. PŇôed zah√°jen√≠m vykl√≠zen√≠ s v√°mi vŇ°e spoleńćnńõ projdeme a upŇôesn√≠me, pŇô√≠padnńõ vyńćlen√≠me vńõci, kter√© chcete ponechat. Nic nevyhazujeme bez pŇôedchoz√≠ domluvy.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Mus√≠m b√Ĺt bńõhem vykl√≠zen√≠ na m√≠stńõ?<div class="faq-toggle">+</div></div><div class="faq-a">Nemus√≠te. VaŇ°e pŇô√≠tomnost nen√≠ nutn√°. Stańć√≠ zajistit pŇô√≠stup do nemovitosti (napŇô. pŇôed√°n√≠m kl√≠ńćŇĮ). Po dokonńćen√≠ v√°m poŇ°leme fotodokumentaci, prostor uzamkneme a kl√≠ńće bezpeńćnńõ vr√°t√≠me.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">PŇôiprav√≠te byt k prodeji nebo pron√°jmu?<div class="faq-toggle">+</div></div><div class="faq-a">Ano. Po vykl√≠zen√≠ mŇĮŇĺeme zajistit √ļklid, dezinfekci i pŇô√≠padnou v√Ĺmalbu, aby byl byt pŇôipraven√Ĺ k prodeji nebo pron√°jmu a ihned pŇôipraven√Ĺ k pŇôed√°n√≠ nebo nafocen√≠.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Jak√° je cena za vyklizen√≠?<div class="faq-toggle">+</div></div><div class="faq-a">PŇôesnou cenu sdńõl√≠me jeŇ°tńõ pŇôed pŇô√≠jezdem. Pro nacenńõn√≠ stańć√≠ fotky prostoru a z√°kladn√≠ informace o pŇô√≠stupu. Domluven√° cena je <strong>fixn√≠ a koneńćn√°</strong> ‚Äď bńõhem vykl√≠zen√≠ se nijak nemńõn√≠ a nepŇôid√°vaj√≠ se Ňĺ√°dn√© dalŇ°√≠ poplatky.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Je moŇĺn√© vykl√≠zen√≠ objednat na posledn√≠ chv√≠li?<div class="faq-toggle">+</div></div><div class="faq-a">Ano. SnaŇĺ√≠me se vyhovńõt i kr√°tkodob√Ĺm term√≠nŇĮm. Kontaktujte n√°s co nejdŇô√≠ve a domluv√≠me nejbliŇĺŇ°√≠ moŇĺn√Ĺ term√≠n ‚ÄĒ standardnńõ do 24‚Äď48 hodin.</div></div>
+          <div class="faq-item"><div class="faq-q" onclick="toggleFaq(this)">Jak prob√≠h√° platba za vykl√≠zen√≠?<div class="faq-toggle">+</div></div><div class="faq-a">Platba prob√≠h√° aŇĺ po dokonńćen√≠ vykl√≠zen√≠, kdy si hotovou pr√°ci pŇôevezmete. Uhradit ji mŇĮŇĺete hotovńõ nebo pomoc√≠ QR k√≥du. DaŇąov√Ĺ doklad (fakturu) v√°m n√°slednńõ vŇĺdy zaŇ°leme e-mailem.</div></div>
         </div>
       </div>
     </div>
@@ -1749,31 +1193,29 @@
         <div class="footer-brand">
           <div class="logo" style="color:white;">
             <div class="logo-mark">ūüöõ</div>
-            <div style="font-size:1.15rem; font-weight:900; color:white; letter-spacing:-0.4px;">
-              Vyklizeni<span style="color:var(--gold);">EXPERT</span>
-            </div>
+            <div style="font-size:1.15rem; font-weight:900; color:white; letter-spacing:-0.4px;">Vyklizeni<span style="color:var(--gold);">EXPERT</span></div>
           </div>
           <p>Rychl√© vykl√≠zen√≠ za rozumnou cenu. Expresnńõ, spolehlivńõ, diskr√©tnńõ.</p>
         </div>
         <div class="footer-col">
           <h5>SluŇĺby</h5>
           <ul>
-            <li><a href="#">Vykl√≠zen√≠ bytŇĮ</a></li>
-            <li><a href="#">Vykl√≠zen√≠ domŇĮ</a></li>
-            <li><a href="#">Vykl√≠zen√≠ sklepŇĮ</a></li>
-            <li><a href="#">PozŇĮstalosti</a></li>
-            <li><a href="#">Kancel√°Ňôe</a></li>
-            <li><a href="#">Zahrady</a></li>
+            <li><a href="#sluzby">Vykl√≠zen√≠ bytŇĮ</a></li>
+            <li><a href="#sluzby">Vykl√≠zen√≠ domŇĮ</a></li>
+            <li><a href="#sluzby">Vykl√≠zen√≠ sklepŇĮ</a></li>
+            <li><a href="#sluzby">PozŇĮstalosti</a></li>
+            <li><a href="#sluzby">Kancel√°Ňôe</a></li>
+            <li><a href="#sluzby">Zahrady</a></li>
           </ul>
         </div>
         <div class="footer-col">
           <h5>Informace</h5>
           <ul>
-            <li><a href="#">O n√°s</a></li>
-            <li><a href="#">Reference</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Jak to funguje</a></li>
-            <li><a href="#">Cen√≠k</a></li>
+            <li><a href="#uvod">O n√°s</a></li>
+            <li><a href="#recenze">Reference</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#jak-to-funguje">Jak to funguje</a></li>
+            <li><a href="#kontakt">Cen√≠k</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -1786,7 +1228,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <p>¬© 2025 VyklizeniExpert ¬∑ VŇ°echna pr√°va vyhrazena</p>
+        <p>¬© 2026 VyklizeniExpert ¬∑ VŇ°echna pr√°va vyhrazena ¬∑ <a href="/zasady-ochrany-osobnich-udaju" style="color:rgba(255,255,255,0.4);">Ochrana osobn√≠ch √ļdajŇĮ</a></p>
         <div class="footer-chips">
           <span class="footer-chip">PojiŇ°tńõn√° firma</span>
           <span class="footer-chip">Certifikovan√° likvidace</span>
@@ -1798,72 +1240,235 @@
 
   <!-- FAB -->
   <div class="fab">
+    <div class="fab-wa-label">WhatsApp</div>
+    <a href="https://wa.me/420607481024" class="fab-wa" target="_blank" rel="noopener" aria-label="WhatsApp">ūüí¨</a>
     <div class="fab-label">Zavolat hned ‚ėé</div>
-    <a href="tel:+420607481024" class="fab-btn">ūüďě</a>
+    <a href="tel:+420607481024" class="fab-btn" aria-label="Zavolat">ūüďě</a>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast" role="alert"></div>
+
+  <!-- CALCULATOR MODAL -->
+  <div class="calc-overlay" id="calcOverlay" onclick="closeCalcOutside(event)">
+    <div class="calc-modal">
+      <button class="calc-close" onclick="closeCalc()">‚úē</button>
+      <div class="calc-progress">
+        <div class="calc-prog-dot done" id="cp1"></div>
+        <div class="calc-prog-dot" id="cp2"></div>
+        <div class="calc-prog-dot" id="cp3"></div>
+        <div class="calc-prog-dot" id="cp4"></div>
+      </div>
+      <div class="calc-panel active" id="cStep1">
+        <div class="calc-step-title">Co potŇôebujete vyklidit?</div>
+        <div class="calc-step-sub">Vyberte typ prostoru</div>
+        <div class="calc-options">
+          <div class="calc-opt" onclick="selectCalc(1,'byt',this)"><div class="calc-opt-icon">ūüŹ†</div><div class="calc-opt-label">Byt</div></div>
+          <div class="calc-opt" onclick="selectCalc(1,'dum',this)"><div class="calc-opt-icon">ūüŹ°</div><div class="calc-opt-label">DŇĮm</div></div>
+          <div class="calc-opt" onclick="selectCalc(1,'sklep',this)"><div class="calc-opt-icon">ūüď¶</div><div class="calc-opt-label">Sklep / gar√°Ňĺ</div></div>
+          <div class="calc-opt" onclick="selectCalc(1,'pozustalost',this)"><div class="calc-opt-icon">ūüēĮÔłŹ</div><div class="calc-opt-label">PozŇĮstalost</div></div>
+          <div class="calc-opt" onclick="selectCalc(1,'kancelar',this)"><div class="calc-opt-icon">ūüŹĘ</div><div class="calc-opt-label">Kancel√°Ňô</div></div>
+          <div class="calc-opt" onclick="selectCalc(1,'zahrada',this)"><div class="calc-opt-icon">ūüĆŅ</div><div class="calc-opt-label">Zahrada</div></div>
+        </div>
+        <div class="calc-nav"><span></span><button class="calc-next" id="cNext1" onclick="calcNext(2)" disabled>D√°l ‚Üí</button></div>
+      </div>
+      <div class="calc-panel" id="cStep2">
+        <div class="calc-step-title">Jak velk√Ĺ prostor?</div>
+        <div class="calc-step-sub">Orientańćn√≠ velikost</div>
+        <div class="calc-options">
+          <div class="calc-opt" onclick="selectCalc(2,'small',this)"><div class="calc-opt-icon">ūüďź</div><div class="calc-opt-label">Mal√Ĺ (1+1 / sklep)</div></div>
+          <div class="calc-opt" onclick="selectCalc(2,'medium',this)"><div class="calc-opt-icon">ūüďŹ</div><div class="calc-opt-label">StŇôedn√≠ (2+1 / 3+1)</div></div>
+          <div class="calc-opt" onclick="selectCalc(2,'large',this)"><div class="calc-opt-icon">ūüŹóÔłŹ</div><div class="calc-opt-label">Velk√Ĺ (4+1 a v√≠ce)</div></div>
+          <div class="calc-opt" onclick="selectCalc(2,'xlarge',this)"><div class="calc-opt-icon">‚ö†ÔłŹ</div><div class="calc-opt-label">Velmi zaplnńõn√Ĺ</div></div>
+        </div>
+        <div class="calc-nav"><button class="calc-back" onclick="calcBack(1)">‚Üź Zpńõt</button><button class="calc-next" id="cNext2" onclick="calcNext(3)" disabled>D√°l ‚Üí</button></div>
+      </div>
+      <div class="calc-panel" id="cStep3">
+        <div class="calc-step-title">Kdy to potŇôebujete?</div>
+        <div class="calc-step-sub">Term√≠n ovlivŇąuje dostupnost</div>
+        <div class="calc-options">
+          <div class="calc-opt" onclick="selectCalc(3,'urgent',this)"><div class="calc-opt-icon">‚ö°</div><div class="calc-opt-label">Do 24‚Äď48 hodin</div></div>
+          <div class="calc-opt" onclick="selectCalc(3,'week',this)"><div class="calc-opt-icon">ūüďÖ</div><div class="calc-opt-label">Tento t√Ĺden</div></div>
+          <div class="calc-opt" onclick="selectCalc(3,'later',this)"><div class="calc-opt-icon">ūüóďÔłŹ</div><div class="calc-opt-label">Za v√≠ce neŇĺ t√Ĺden</div></div>
+          <div class="calc-opt" onclick="selectCalc(3,'flexible',this)"><div class="calc-opt-icon">ūü§Ě</div><div class="calc-opt-label">Jsem flexibiln√≠</div></div>
+        </div>
+        <div class="calc-nav"><button class="calc-back" onclick="calcBack(2)">‚Üź Zpńõt</button><button class="calc-next" id="cNext3" onclick="calcNext(4)" disabled>Zobrazit cenu ‚Üí</button></div>
+      </div>
+      <div class="calc-panel" id="cStep4">
+        <div class="calc-step-title">Orientańćn√≠ cena</div>
+        <div class="calc-step-sub">PŇôesnou cenu upŇôesn√≠me po prohl√≠dce nebo z fotek ‚ÄĒ zdarma a bez z√°vazkŇĮ.</div>
+        <div class="calc-result-box">
+          <div class="calc-price" id="calcPrice">‚Äď</div>
+          <div class="calc-price-note">orientańćn√≠ rozsah ¬∑ bez z√°vazkŇĮ</div>
+        </div>
+        <ul class="calc-result-tips">
+          <li>‚úÖ Pevn√° cena domluven√° pŇôed zah√°jen√≠m prac√≠</li>
+          <li>‚ö° N√°stup <span id="calcTiming">do 24‚Äď48 hodin</span></li>
+          <li>‚ôĽÔłŹ Ekologick√° likvidace odpadu v cenńõ</li>
+          <li>ūüďĄ Doklad o likvidaci pro √ļŇôady zdarma</li>
+        </ul>
+        <div class="calc-nav" style="flex-direction:column;gap:.75rem;">
+          <a href="#kontakt" class="form-submit-btn" style="text-align:center;text-decoration:none;display:block;" onclick="closeCalc()">ūüďč Chci pŇôesnou kalkulaci zdarma ‚Üí</a>
+          <button class="calc-back" onclick="calcBack(3)">‚Üź PŇôepońć√≠tat</button>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
-    /* ‚ĒÄ‚ĒÄ FOTO UPLOAD ‚Äď zobrazen√≠ n√°zvŇĮ souborŇĮ ‚ĒÄ‚ĒÄ */
+    /* ‚ĒÄ‚ĒÄ SCROLL PROGRESS ‚ĒÄ‚ĒÄ */
+    window.addEventListener('scroll', () => {
+      const el = document.getElementById('scrollProgress');
+      const total = document.documentElement.scrollHeight - innerHeight;
+      if (total > 0) el.style.width = (scrollY / total * 100) + '%';
+    });
+
+    /* ‚ĒÄ‚ĒÄ TOAST ‚ĒÄ‚ĒÄ */
+    function showToast(msg, type) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.style.background = type === 'error' ? '#c0392b' : type === 'warn' ? '#d68910' : 'var(--green)';
+      t.classList.add('show');
+      clearTimeout(t._timer);
+      t._timer = setTimeout(() => t.classList.remove('show'), 4500);
+    }
+    if (location.search.includes('odeslano=1')) {
+      showToast('‚úÖ Odesl√°no! Ozveme se do 3 hodin.');
+      history.replaceState({}, '', location.pathname);
+    }
+
+    /* ‚ĒÄ‚ĒÄ FOTO UPLOAD ‚Äď validace ‚ĒÄ‚ĒÄ */
     function showFileNames(input) {
       const list = document.getElementById('fileList');
-      if (input.files && input.files.length > 0) {
-        const names = Array.from(input.files).map(f => 'ūüď∑ ' + f.name).join('<br>');
-        list.innerHTML = names;
-        list.style.display = 'block';
-      } else {
-        list.style.display = 'none';
-      }
+      if (!input.files || input.files.length === 0) { list.style.display = 'none'; return; }
+      if (input.files.length > 5) { showToast('‚ö†ÔłŹ Maxim√°lnńõ 5 fotek najednou.', 'warn'); input.value = ''; list.style.display = 'none'; return; }
+      let total = 0;
+      Array.from(input.files).forEach(f => total += f.size);
+      if (total > 10 * 1024 * 1024) { showToast('‚ö†ÔłŹ Celkov√° velikost fotek nesm√≠ pŇôes√°hnout 10 MB.', 'warn'); input.value = ''; list.style.display = 'none'; return; }
+      list.innerHTML = Array.from(input.files).map(f => 'ūüď∑ ' + f.name).join('<br>');
+      list.style.display = 'block';
     }
 
-    /* ‚ĒÄ‚ĒÄ HAMBURGER MENU ‚ĒÄ‚ĒÄ */
+    /* ‚ĒÄ‚ĒÄ FORM AJAX ‚ĒÄ‚ĒÄ */
+    const kalkulaceForm = document.getElementById('kalkulaceForm');
+    if (kalkulaceForm) {
+      kalkulaceForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        if (!document.getElementById('gdprCheck').checked) { showToast('‚ö†ÔłŹ Pros√≠m potvrńŹte souhlas s GDPR.', 'warn'); return; }
+        const btn = document.getElementById('formSubmitBtn');
+        const orig = btn.textContent; btn.textContent = 'Odes√≠l√°m‚Ä¶'; btn.disabled = true;
+        try {
+          const res = await fetch('https://formsubmit.co/ajax/astepevents@gmail.com', {
+            method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(this)
+          });
+          const json = await res.json();
+          if (json.success === 'true' || json.success === true) {
+            showToast('‚úÖ Odesl√°no! Ozveme se do 3 hodin.');
+            this.reset(); document.getElementById('fileList').style.display = 'none';
+          } else { throw new Error(); }
+        } catch { showToast('‚ĚĆ NepodaŇôilo se odeslat. Zavolejte: 607 481 024', 'error'); }
+        finally { btn.textContent = orig; btn.disabled = false; }
+      });
+    }
+
+    /* ‚ĒÄ‚ĒÄ HAMBURGER ‚ĒÄ‚ĒÄ */
     function toggleMenu() {
-      const btn = document.getElementById('hamburger');
-      const menu = document.getElementById('mobileMenu');
-      btn.classList.toggle('open');
-      menu.classList.toggle('open');
+      const btn = document.getElementById('hamburger'), menu = document.getElementById('mobileMenu');
+      btn.classList.toggle('open'); menu.classList.toggle('open');
       document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
     }
-
     function closeMenu() {
       document.getElementById('hamburger').classList.remove('open');
       document.getElementById('mobileMenu').classList.remove('open');
       document.body.style.overflow = '';
     }
-
-    // ZavŇô√≠t menu klikem mimo
     document.addEventListener('click', function(e) {
-      const menu = document.getElementById('mobileMenu');
-      const btn = document.getElementById('hamburger');
-      if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
-        closeMenu();
-      }
+      const menu = document.getElementById('mobileMenu'), btn = document.getElementById('hamburger');
+      if (menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
     });
 
-    /* ‚ĒÄ‚ĒÄ FAQ ACCORDION ‚ĒÄ‚ĒÄ */
+    /* ‚ĒÄ‚ĒÄ FAQ ‚ĒÄ‚ĒÄ */
     function toggleFaq(el) {
-      const item = el.closest('.faq-item');
-      const isOpen = item.classList.contains('open');
+      const item = el.closest('.faq-item'), isOpen = item.classList.contains('open');
       document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
       if (!isOpen) item.classList.add('open');
     }
 
-    /* ‚ĒÄ‚ĒÄ SCROLL FADE-IN ‚ĒÄ‚ĒÄ */
-    const els = document.querySelectorAll('.svc-card, .why-card, .test-card, .step-item, .gallery-pair');
-    const io = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.style.opacity = '1';
-          e.target.style.transform = 'translateY(0)';
-        }
-      });
-    }, { threshold: 0.08 });
+    /* ‚ĒÄ‚ĒÄ TYPING ANIMATION ‚ĒÄ‚ĒÄ */
+    const typeWords = ['NEMOVITOST√ć','BYTŇģ','DOMŇģ','SKLEPŇģ','ZAHRAD','KANCEL√ĀŇė√ć'];
+    let tIdx=0, tChar=0, tDel=false;
+    const typeEl = document.getElementById('heroType');
+    function typeStep() {
+      if (!typeEl) return;
+      const word = typeWords[tIdx];
+      if (!tDel) { typeEl.textContent = word.slice(0,++tChar); if(tChar===word.length){tDel=true;setTimeout(typeStep,2200);}else setTimeout(typeStep,85); }
+      else { typeEl.textContent = word.slice(0,--tChar); if(tChar===0){tDel=false;tIdx=(tIdx+1)%typeWords.length;setTimeout(typeStep,350);}else setTimeout(typeStep,45); }
+    }
+    setTimeout(typeStep, 2000);
 
-    els.forEach(el => {
-      el.style.opacity = '0';
-      el.style.transition = 'opacity .45s ease, transform .45s ease';
-      el.style.transform = 'translateY(24px)';
-      io.observe(el);
+    /* ‚ĒÄ‚ĒÄ ACTIVE NAV ‚ĒÄ‚ĒÄ */
+    const navLinks = document.querySelectorAll('.nav-links a[href^="#"]');
+    const navObs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if(e.isIntersecting){ navLinks.forEach(a=>a.classList.remove('active')); const l=document.querySelector(`.nav-links a[href="#${e.target.id}"]`); if(l)l.classList.add('active'); } });
+    }, { rootMargin: '-40% 0px -55% 0px' });
+    ['uvod','sluzby','jak-to-funguje','nase-prace','recenze','faq','kontakt'].forEach(id=>{const el=document.getElementById(id);if(el)navObs.observe(el);});
+
+    /* ‚ĒÄ‚ĒÄ COUNTER ANIMATION ‚ĒÄ‚ĒÄ */
+    let countersDone = false;
+    const statsObs = new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !countersDone) {
+        countersDone = true;
+        document.querySelectorAll('.h-stat-num[data-target]').forEach(el => {
+          const target = parseFloat(el.dataset.target), isDecimal = el.dataset.decimal==='1', span = el.querySelector('.cnt-num'), start = performance.now(), dur = 1600;
+          function tick(now) { const p=Math.min((now-start)/dur,1), e2=1-Math.pow(1-p,3), val=e2*target; span.textContent=isDecimal?(val/10).toFixed(1):Math.floor(val); if(p<1)requestAnimationFrame(tick); }
+          requestAnimationFrame(tick);
+        });
+      }
+    }, { threshold: 0.5 });
+    const statsEl = document.querySelector('.hero-stats');
+    if (statsEl) statsObs.observe(statsEl);
+
+    /* ‚ĒÄ‚ĒÄ BEFORE/AFTER SLIDER ‚ĒÄ‚ĒÄ */
+    document.querySelectorAll('.ba-slider').forEach(slider => {
+      const handle=slider.querySelector('.ba-handle'), afterWrap=slider.querySelector('.ba-after-wrap'), afterInner=slider.querySelector('.ba-after-inner'), hint=slider.querySelector('.ba-hint');
+      let dragging=false;
+      function initSize(){afterInner.style.width=slider.offsetWidth+'px';}
+      initSize(); window.addEventListener('resize',initSize);
+      function setPos(x){const rect=slider.getBoundingClientRect(),pct=Math.min(Math.max((x-rect.left)/rect.width,0.05),0.95);afterWrap.style.width=(pct*100)+'%';handle.style.left=(pct*100)+'%';if(hint)hint.style.opacity='0';}
+      handle.addEventListener('mousedown',()=>dragging=true);
+      window.addEventListener('mousemove',e=>{if(dragging)setPos(e.clientX);});
+      window.addEventListener('mouseup',()=>dragging=false);
+      handle.addEventListener('touchstart',e=>{dragging=true;e.preventDefault();},{passive:false});
+      window.addEventListener('touchmove',e=>{if(dragging){setPos(e.touches[0].clientX);e.preventDefault();}},{passive:false});
+      window.addEventListener('touchend',()=>dragging=false);
     });
+
+    /* ‚ĒÄ‚ĒÄ CALCULATOR ‚ĒÄ‚ĒÄ */
+    const calcState={type:null,size:null,timing:null};
+    const prices={
+      byt:{small:'3 000‚Äď8 000',medium:'8 000‚Äď16 000',large:'15 000‚Äď28 000',xlarge:'20 000‚Äď38 000'},
+      dum:{small:'8 000‚Äď18 000',medium:'18 000‚Äď35 000',large:'30 000‚Äď55 000',xlarge:'40 000‚Äď75 000'},
+      sklep:{small:'1 500‚Äď4 000',medium:'3 500‚Äď8 000',large:'7 000‚Äď14 000',xlarge:'10 000‚Äď20 000'},
+      pozustalost:{small:'5 000‚Äď12 000',medium:'10 000‚Äď22 000',large:'18 000‚Äď35 000',xlarge:'25 000‚Äď50 000'},
+      kancelar:{small:'4 000‚Äď9 000',medium:'8 000‚Äď18 000',large:'15 000‚Äď30 000',xlarge:'20 000‚Äď42 000'},
+      zahrada:{small:'2 000‚Äď5 000',medium:'4 500‚Äď10 000',large:'8 000‚Äď18 000',xlarge:'12 000‚Äď28 000'},
+    };
+    const timings={urgent:'do 24‚Äď48 hodin',week:'tento t√Ĺden',later:'za v√≠ce neŇĺ t√Ĺden',flexible:'dle dohody'};
+    function openCalc(){calcState.type=calcState.size=calcState.timing=null;document.querySelectorAll('.calc-opt').forEach(o=>o.classList.remove('sel'));document.querySelectorAll('.calc-next').forEach(b=>b.disabled=true);calcNext(1);document.getElementById('calcOverlay').classList.add('open');document.body.style.overflow='hidden';}
+    function closeCalc(){document.getElementById('calcOverlay').classList.remove('open');document.body.style.overflow='';}
+    function closeCalcOutside(e){if(e.target===document.getElementById('calcOverlay'))closeCalc();}
+    function selectCalc(step,val,el){const key=step===1?'type':step===2?'size':'timing';calcState[key]=val;el.closest('.calc-options').querySelectorAll('.calc-opt').forEach(o=>o.classList.remove('sel'));el.classList.add('sel');document.getElementById('cNext'+step).disabled=false;}
+    function calcNext(step){document.querySelectorAll('.calc-panel').forEach(p=>p.classList.remove('active'));document.getElementById('cStep'+step).classList.add('active');for(let i=1;i<=4;i++)document.getElementById('cp'+i).classList.toggle('done',i<step);if(step===4){const price=(prices[calcState.type]&&prices[calcState.type][calcState.size])||'2 000‚Äď75 000';document.getElementById('calcPrice').textContent=price+' Kńć';document.getElementById('calcTiming').textContent=timings[calcState.timing]||'dle dohody';}}
+    function calcBack(step){calcNext(step);}
+
+    /* ‚ĒÄ‚ĒÄ COUNTDOWN ‚ĒÄ‚ĒÄ */
+    function updateCountdown(){const el=document.getElementById('cdTimer');if(!el)return;const now=new Date(),day=now.getDay(),mins=now.getHours()*60+now.getMinutes();if(day>=1&&day<=5&&mins>=480&&mins<1080){const rem=1080-mins;el.textContent=' ¬∑ ‚Źį Dnes do '+Math.floor(rem/60)+':'+String(rem%60).padStart(2,'0');}else if(day===0||day===6){el.textContent=' ¬∑ ūüďÖ So‚ÄďNe pracujeme tak√©';}else{el.textContent='';}}
+    updateCountdown(); setInterval(updateCountdown,60000);
+
+    /* ‚ĒÄ‚ĒÄ SCROLL FADE-IN ‚ĒÄ‚ĒÄ */
+    const fadeEls=document.querySelectorAll('.svc-card,.why-card,.test-card,.step-item,.gallery-pair');
+    const fadeObs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';}});},{threshold:0.08});
+    fadeEls.forEach(el=>{el.style.opacity='0';el.style.transition='opacity .45s ease, transform .45s ease';el.style.transform='translateY(24px)';fadeObs.observe(el);});
   </script>
 
 </body>
