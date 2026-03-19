@@ -852,7 +852,7 @@
       </div>
       <div class="hero-cta-group">
         <a href="#kontakt" class="btn-primary">&#128203; Kalkulace zdarma</a>
-        <button class="btn-calc-trigger" onclick="openCalc()">&#129518; Orienta&#269;n&#237; cena</button>
+        <a href="#kontakt" class="btn-calc-trigger">&#128222; Konzultace zdarma</a>
       </div>
     </div>
 
@@ -1135,12 +1135,12 @@
         <span>&#127941; Doporu&#269;en&#237; #1 v regionu</span>
       </div>
       <div class="why-grid">
-        <div class="why-card"><div class="why-icon">&#9889;</div><h4>Expresn&#237; term&#237;ny</h4><p>N&#225;stup do 24 hodin od objedn&#225;vky. Pracujeme i o v&#237;kendech a sv&#225;tc&#237;ch.</p></div>
-        <div class="why-card"><div class="why-icon">&#128176;</div><h4>Pevn&#225; cena</h4><p>Cena domluven&#225; p&#345;edem. &#381;&#225;dn&#233; skryt&#233; poplatky ani p&#345;ekvapen&#237; po dokon&#269;en&#237;.</p></div>
-        <div class="why-card"><div class="why-icon">&#128737;&#65039;</div><h4>Poji&#353;t&#283;n&#225; firma</h4><p>Pln&#225; zodpov&#283;dnost za va&#353;i nemovitost. Pojistka kryje p&#345;&#237;padn&#233; &#353;kody.</p></div>
-        <div class="why-card"><div class="why-icon">&#9851;&#65039;</div><h4>Certifikovan&#225; likvidace</h4><p>Ekologick&#225; likvidace v souladu se z&#225;konem. Vyd&#225;v&#225;me doklady pro &#250;&#345;ady.</p></div>
-        <div class="why-card"><div class="why-icon">&#128142;</div><h4>V&#253;kup cennost&#237;</h4><p>Staro&#382;itnosti, n&#225;bytek nebo elektronika? Co m&#225; hodnotu, odkoup&#237;me a sn&#237;&#382;&#237; to cenu vykl&#237;zen&#237;.</p></div>
-        <div class="why-card"><div class="why-icon">&#129309;</div><h4>Diskr&#233;tn&#237; p&#345;&#237;stup</h4><p>Poz&#367;stalosti a citliv&#233; situace &#345;e&#353;&#237;me s maxim&#225;ln&#237; ohleduplnost&#237; a taktem.</p></div>
+        <div class="why-card"><h4>Expresn&#237; term&#237;ny</h4><p>N&#225;stup do 24 hodin od objedn&#225;vky. Pracujeme i o v&#237;kendech a sv&#225;tc&#237;ch.</p></div>
+        <div class="why-card"><h4>Pevn&#225; cena</h4><p>Cena domluven&#225; p&#345;edem. &#381;&#225;dn&#233; skryt&#233; poplatky ani p&#345;ekvapen&#237; po dokon&#269;en&#237;.</p></div>
+        <div class="why-card"><h4>Poji&#353;t&#283;n&#225; firma</h4><p>Pln&#225; zodpov&#283;dnost za va&#353;i nemovitost. Pojistka kryje p&#345;&#237;padn&#233; &#353;kody.</p></div>
+        <div class="why-card"><h4>Certifikovan&#225; likvidace</h4><p>Ekologick&#225; likvidace v souladu se z&#225;konem. Vyd&#225;v&#225;me doklady pro &#250;&#345;ady.</p></div>
+        <div class="why-card"><h4>V&#253;kup cennost&#237;</h4><p>Staro&#382;itnosti, n&#225;bytek nebo elektronika? Co m&#225; hodnotu, odkoup&#237;me a sn&#237;&#382;&#237; to cenu vykl&#237;zen&#237;.</p></div>
+        <div class="why-card"><h4>Diskr&#233;tn&#237; p&#345;&#237;stup</h4><p>Poz&#367;stalosti a citliv&#233; situace &#345;e&#353;&#237;me s maxim&#225;ln&#237; ohleduplnost&#237; a taktem.</p></div>
       </div>
     </div>
   </section>
@@ -1415,25 +1415,12 @@
     }
 
     /* \u2500\u2500 FORM AJAX \u2500\u2500 */
-    const kalkulaceForm = document.getElementById('kalkulaceForm');
-    if (kalkulaceForm) {
-      kalkulaceForm.addEventListener('submit', async function(e) {
-        e.preventDefault();
-        if (!document.getElementById('gdprCheck').checked) { showToast('\u26a0\ufe0f Pros\u00edm potvr\u010fte souhlas s GDPR.', 'warn'); return; }
-        const btn = document.getElementById('formSubmitBtn');
-        const orig = btn.textContent; btn.textContent = 'Odes\u00edl\u00e1m\u2026'; btn.disabled = true;
-        try {
-          const res = await fetch('https://formsubmit.co/ajax/astepevents@gmail.com', {
-            method: 'POST', headers: { 'Accept': 'application/json' }, body: new FormData(this)
-          });
-          const json = await res.json();
-          if (json.success === 'true' || json.success === true) {
-            showToast('\u2705 Odesl\u00e1no! Ozveme se do 3 hodin.');
-            this.reset(); document.getElementById('fileList').style.display = 'none';
-          } else { throw new Error(); }
-        } catch { showToast('\u274c Nepoda\u0159ilo se odeslat. Zavolejte: 607 481 024', 'error'); }
-        finally { btn.textContent = orig; btn.disabled = false; }
-      });
+    /* Detekce √ļspńõŇ°n√©ho odesl√°n√≠ pŇôes ?odeslano=1 */
+    if (new URLSearchParams(window.location.search).get('odeslano') === '1') {
+      setTimeout(function(){
+        showToast('‚úÖ Odesl√°no! Ozveme se do 3 hodin.');
+        if (history.replaceState) history.replaceState(null,'',window.location.pathname);
+      }, 400);
     }
 
     /* \u2500\u2500 HAMBURGER \u2500\u2500 */
