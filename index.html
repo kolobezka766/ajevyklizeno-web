@@ -1415,11 +1415,14 @@
     (function() {
       var form = document.getElementById('kalkulaceForm');
       if (!form) return;
+      var submitting = false;
       form.addEventListener('submit', function(e) {
         e.preventDefault();
+        if (submitting) return;
+        submitting = true;
         var btn = document.getElementById('formSubmitBtn');
         btn.disabled = true;
-        btn.textContent = 'Odes√≠l√°m\u2026';
+        btn.textContent = 'Odesl\u00edl\u00e1m\u2026';
         var data = new FormData(form);
         fetch(form.action, {
           method: 'POST',
@@ -1428,17 +1431,18 @@
         })
         .then(function(r) {
           if (r.ok) {
-            showToast('Odesl√°no, ozveme se V√°m co nejdŇô√≠ve.');
+            showToast('Odesl\u00e1no, ozveme se V\u00e1m co nejd\u0159\u00edve.');
             form.reset();
             document.getElementById('fileList').style.display = 'none';
           } else {
-            showToast('Chyba pŇôi odes√≠l√°n√≠. Zkuste to pros√≠m znovu nebo zavolejte.', 'error');
+            showToast('Chyba p\u0159i odesl\u00e1n\u00ed. Zkuste to pros\u00edm znovu nebo zavolejte.', 'error');
           }
         })
         .catch(function() {
-          showToast('Chyba pŇôi odes√≠l√°n√≠. Zkuste to pros√≠m znovu nebo zavolejte.', 'error');
+          showToast('Chyba p\u0159i odesl\u00e1n\u00ed. Zkuste to pros\u00edm znovu nebo zavolejte.', 'error');
         })
         .finally(function() {
+          submitting = false;
           btn.disabled = false;
           btn.textContent = 'Odeslat \u2192';
         });
