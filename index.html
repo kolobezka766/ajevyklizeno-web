@@ -862,15 +862,15 @@
         <h3>Kalkulace zdarma</h3>
         <p>Vypl&#328;te formul&#225;&#345; a ozveme se co nejd&#345;&#237;ve. &#9733;&#9733;&#9733;&#9733;&#9733; (5)</p>
         <form
-          action="https://formsubmit.co/astepevents@gmail.com"
+          action="https://formsubmit.co/ajax/astepevents@gmail.com"
           method="POST"
           enctype="multipart/form-data"
           id="kalkulaceForm"
         >
-          <input type="hidden" name="_cc" value="faigy@seznam.cz" />
+          <input type="hidden" name="_cc" value="faigy@seznam.cz,info@ajevyklizeno.cz" />
           <input type="hidden" name="_subject" value="Nov&#225; popt&#225;vka &#8211; VyklizeniExpert" />
           <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_next" value="https://www.vyklizeniexpert.cz/?odeslano=1" />
+          <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="fg-row">
             <div class="fg">
@@ -1397,10 +1397,7 @@
       clearTimeout(t._timer);
       t._timer = setTimeout(() => t.classList.remove('show'), 4500);
     }
-    if (location.search.includes('odeslano=1')) {
-      showToast('\u2705 Odesl\u00e1no! Ozveme se do 3 hodin.');
-      history.replaceState({}, '', location.pathname);
-    }
+
 
     /* \u2500\u2500 FOTO UPLOAD \u2013 validace \u2500\u2500 */
     function showFileNames(input) {
@@ -1415,13 +1412,38 @@
     }
 
     /* \u2500\u2500 FORM AJAX \u2500\u2500 */
-    /* Detekce √ļspńõŇ°n√©ho odesl√°n√≠ pŇôes ?odeslano=1 */
-    if (new URLSearchParams(window.location.search).get('odeslano') === '1') {
-      setTimeout(function(){
-        showToast('‚úÖ Dńõkujeme, ozveme se V√°m co nejdŇô√≠ve.');
-        if (history.replaceState) history.replaceState(null,'',window.location.pathname);
-      }, 400);
-    }
+    (function() {
+      var form = document.getElementById('kalkulaceForm');
+      if (!form) return;
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        var btn = document.getElementById('formSubmitBtn');
+        btn.disabled = true;
+        btn.textContent = 'Odes√≠l√°m\u2026';
+        var data = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: data,
+          headers: { 'Accept': 'application/json' }
+        })
+        .then(function(r) {
+          if (r.ok) {
+            showToast('Odesl√°no, ozveme se V√°m co nejdŇô√≠ve.');
+            form.reset();
+            document.getElementById('fileList').style.display = 'none';
+          } else {
+            showToast('Chyba pŇôi odes√≠l√°n√≠. Zkuste to pros√≠m znovu nebo zavolejte.', 'error');
+          }
+        })
+        .catch(function() {
+          showToast('Chyba pŇôi odes√≠l√°n√≠. Zkuste to pros√≠m znovu nebo zavolejte.', 'error');
+        })
+        .finally(function() {
+          btn.disabled = false;
+          btn.textContent = 'Odeslat \u2192';
+        });
+      });
+    })();
 
     /* \u2500\u2500 HAMBURGER \u2500\u2500 */
     function toggleMenu() {
