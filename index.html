@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-P8LKGMX3');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
@@ -840,6 +847,10 @@
   </style>
 </head>
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P8LKGMX3"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div id="scrollProgress"></div>
 
@@ -912,7 +923,7 @@
         <h3>Kalkulace zdarma</h3>
         <p>Vypl&#328;te formul&#225;&#345; a ozveme se co nejd&#345;&#237;ve. &#9733;&#9733;&#9733;&#9733;&#9733; (5)</p>
         <form
-          action="https://formsubmit.co/ajax/astepevents@gmail.com"
+          action="https://formsubmit.co/astepevents@gmail.com"
           method="POST"
           enctype="multipart/form-data"
           id="kalkulaceForm"
@@ -921,6 +932,7 @@
           <input type="hidden" name="_subject" value="Nov&#225; popt&#225;vka &#8211; M&#225;meVyklizeno" />
           <input type="hidden" name="_template" value="table" />
           <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://mamevyklizeno.cz/?odeslano=1" />
           <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
           <div class="fg-row">
             <div class="fg">
@@ -1451,42 +1463,29 @@
       list.style.display = 'block';
     }
 
-    /* \u2500\u2500 FORM AJAX \u2500\u2500 */
+    /* \u2500\u2500 FORM SUBMIT \u2013 dataLayer + redirect \u2500\u2500 */
     (function() {
       var form = document.getElementById('kalkulaceForm');
       if (!form) return;
-      var submitting = false;
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        if (submitting) return;
-        submitting = true;
-        var btn = document.getElementById('formSubmitBtn');
-        btn.disabled = true;
-        btn.textContent = 'Odesl\u00edl\u00e1m\u2026';
-        var data = new FormData(form);
-        fetch(form.action, {
-          method: 'POST',
-          body: data,
-          headers: { 'Accept': 'application/json' }
-        })
-        .then(function(r) {
-          if (r.ok) {
-            showToast('Odesl\u00e1no, ozveme se V\u00e1m co nejd\u0159\u00edve.');
-            form.reset();
-            document.getElementById('fileList').style.display = 'none';
-          } else {
-            showToast('Chyba p\u0159i odesl\u00e1n\u00ed. Zkuste to pros\u00edm znovu nebo zavolejte.', 'error');
-          }
-        })
-        .catch(function() {
-          showToast('Chyba p\u0159i odesl\u00e1n\u00ed. Zkuste to pros\u00edm znovu nebo zavolejte.', 'error');
-        })
-        .finally(function() {
-          submitting = false;
-          btn.disabled = false;
-          btn.textContent = 'Odeslat \u2192';
+
+      /* GTM conversion event on submit */
+      form.addEventListener('submit', function() {
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'form_odeslani',
+          form_id: 'kalkulaceForm'
         });
       });
+
+      /* Show success toast if redirected back with ?odeslano=1 */
+      if (window.location.search.indexOf('odeslano=1') !== -1) {
+        showToast('Odesláno, ozveme se Vám co nejdříve.');
+        if (window.history && window.history.replaceState) {
+          window.history.replaceState({}, document.title, window.location.pathname + window.location.hash);
+        }
+        var el = document.getElementById('kontakt');
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
     })();
 
     /* \u2500\u2500 HAMBURGER \u2500\u2500 */
