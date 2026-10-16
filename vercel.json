@@ -1,13 +1,33 @@
 {
-    "headers": [
-          {
-                  "source": "/(.*)",
-                  "headers": [
-                            {
-                                        "key": "Content-Type",
-                                        "value": "text/html; charset=utf-8"
-                            }
-                  ]
-          }
-    ]
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Security-Policy",
+          "value": "default-src 'self'; script-src 'self' 'unsafe-hashes' 'sha256-+bsDSrR/tuzQdE8VFYM6KvVIUVhrh7hots6Q1TV9hso=' 'sha256-1y8/qMLe2gtIHXjPBHYky0TP1RZpPSnUjvt9hcvHtfQ=' 'sha256-2QMAoiFW6ieNmLVBnP17X+3u4loPdafrpIUc5X5m9UA=' 'sha256-5/BapUPAMpwF/NuTSLLgR+JMAcJ9tKnPPGkFtNRu3SE=' 'sha256-52wtybDtFKPuv/6vYWmAI69mkMAleu0DkBCvZqTlVwQ=' 'sha256-9OjOHXwRCIGTmFZnoZDQGHFh8gz6U5npCm7cYDOyhjI=' 'sha256-9vTVpULz0n3kvlGWMWemOcM1QvqU6VmcgTJnd7smzDw=' 'sha256-Ac/vPg8i+kGt4OMMLDFhgyeJui78W6l3grBC2w+SrNU=' 'sha256-GWwoQFBoOIM74yg1qWYTODZzeFJchmOe6fU0cPc84As=' 'sha256-IaKcB3v9CxqvMjJUzv8DOlBOx5bDEIHOE54uBr8Vubo=' 'sha256-NPQiAFHfOX//546/pLtrKoVL9QjRuPsCI+6doZczyyI=' 'sha256-SAl3e9dusQ/zpEikghamZ3ilIRnY6pjyGxw3Q24gxBc=' 'sha256-STz5MRMHel3TkcPfegR2LD7mY55GUI9/AEJN7rktd+Q=' 'sha256-UYG3vn/46eWxHwjZFQ/h7fWpywbjPYj5UNhdclLPTZE=' 'sha256-Wo3UjEZjeyywFfMKQfcGhK8QoZiCiTa6v4EliUdhM8Y=' 'sha256-ZahH13D2LZaRy97id2QmUmmBWuhv9Rrq9+6lKq76QQE=' 'sha256-cNYNh+5p8o9IhPWCd+cULCiqqoIiw52dgYkOjnBMD8s=' 'sha256-evCpQLOXZkaM4qpd37AR5rRZQTJh4fnRJPZ0OpVnaJk=' 'sha256-fyd9vTIvS+D6SruH8dwaZUxOXZxeYJK252OBDbuFJzU=' 'sha256-i8IHaEVKj12PJxrQVBKq0tTMG6TDxRcSoznUpxcG06A=' 'sha256-ibCKBbWF1TSqxNY5pu3/Z79BcAUSVqHbXuRh2UmTcbQ=' 'sha256-jnrezKwUlgVdFquH9KYL6xv4oL0YN6t+2/D+I4xbaVo=' 'sha256-mZmV8fUM5RiCxSpaz/MEfxaSErA4vwitKgoFA5gUXgE=' 'sha256-t7Ys2A9BZOZJHbxgbw8LcStYmS6ZFVulwzYrUnOdHCs=' 'sha256-wrwld+0zaM2TLmV6jtmxhirAfKMpuVpk1ghhHsOJZF0=' 'sha256-y/Pu1fqJEJ/VST+6nQ+rlimQxLLvFvD7f4V8nsPr7Rc=' 'sha256-ykok5/Rttrqx6W0wOYLhbncTkjvsLEU5gpXfmmwqb5M=' 'sha256-5GPz09+vK+4k0MNbe6c1uXnP/LrVvfYdbIWKpeS4Cuk=' https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://googleads.g.doubleclick.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formsubmit.co https://*.google-analytics.com https://*.analytics.google.com https://*.googleadservices.com https://*.doubleclick.net https://www.googletagmanager.com https://www.google.com; frame-src https://www.googletagmanager.com https://www.google.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self' https://formsubmit.co; upgrade-insecure-requests;"
+        },
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=(), payment=()"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=63072000"
+        }
+      ]
+    }
+  ]
 }
